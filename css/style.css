@@ -9,8 +9,7 @@
     
     
    /*   
-    
-   
+      
     padding: 15px 20px;
     background-color: #333;
     font-size: 20px;
@@ -20,8 +19,8 @@
 
 .navbar {
 
-    padding: 2rem;
-    background-color: #C60808;
+    padding: 1rem;
+    background-color: #333;
   
     
 }
@@ -35,44 +34,36 @@
  
 .navbar-collapse {
 
+    
     align-items: center;
     justify-content: end;
-    
 
 
 }
 
-.hero {
+ 
+ 
 
-    background-color: rgb(241, 242, 243);
-    min-height: 150px;
-    text-align: left;
+.container-redesSociales-menu {
+
     
-    
-}
+    background-color:  #333;
+    justify-content: end;
 
-.hero-texto1 {
-
-    color:#C60808,
-}
-
-
-.container-redesSociales {
-
-    background-color: #C60808
 
 
 }
 
 .container-redesSociales-footer {
 
-    background-color: #7E2020
+   
+    background-color: #333
 
 
 }
 
 .footer {
-    background-color: #7E2020;
+    background-color: #333;
     text-align: center;
     display: flex;
     flex-direction: left;
@@ -87,6 +78,11 @@
     fill:#fefefe !important;
 }
 
+h1 {
+
+    color:#3e7999;
+
+}
 
 body {
 
@@ -94,7 +90,7 @@ body {
     color: #333;
     font-size: 1.2rem;
     line-height: 1.6em;
-   
+    padding-top: 250px;   /* espacio para que no quede tapado por la cabecera fija el texto inicial */
 }
 
  
@@ -103,7 +99,8 @@ p {
     margin-bottom: 1.6em;
 }
 
-.container {
+/*descativado clase container */
+.container1 {
     width: 85%;
     max-width: 850px;
     margin: 0 auto;
@@ -118,6 +115,33 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
+/* estilo de los botones */
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4cc0bc;
+    border: none;
+    border-radius: 15px;
+    /*box-shadow: 0 9px #999; */
+  }
+
+  .btn:hover {background-color: #3e7999}
+    
+  .btn:active {
+    background-color: #287890;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+
+
 /* Main  */
 
 
