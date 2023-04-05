@@ -14,17 +14,12 @@
 
     /* Deja fijo el menu */
     .header {
-        position: fixed;
+        position:fixed;
         top: 0;
         width: 100%;
+        z-index: 3;    /* orden los elementos por acoplamiento */    
         
-    /*   
-        
-        padding: 15px 20px;
-        background-color: #333;
-        font-size: 20px;
-        color: #FFFFFF;
-    */ 
+   
     }
 
     .navbar {
@@ -223,6 +218,8 @@
         color: #5d0404;
    }
    
+
+   
    .container-imagenes-index {
 
         display: inline-block;
@@ -232,30 +229,33 @@
 
 
    }
+   
 
   
-
+   
   .img-index{
     object-fit: cover;
     width:70%;
     height:70%;
     border-top-left-radius: 400px 200px;
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     filter: drop-shadow(20px  20px 20px #333 );
 
   }
-
+ 
    
    .row {
         justify-content: center;
    }
 
+   
    .img-circle-index {
         background: rgb(240, 161, 202);
         border-radius: 50%;
         width: 300px;
         height: 300px;
         filter: drop-shadow(20px  20px 20px #333 );
+        z-index: 1;   /* ordena los elementos por acoplamiento */
     }
 
 
