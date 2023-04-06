@@ -1,70 +1,90 @@
 /* Header */
+
+
     * {
+
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+
     }
 
-/* Deja fijo el menu */
+
+
+
+    /* Deja fijo el menu */
     .header {
         position:fixed;
         top: 0;
         width: 100%;
-       
-        /* padding: 15px 20px;
-        background-color: #333;
-        font-size: 20px;
-        color: #FFFFFF;
-    */
         z-index: 3;    /* orden los elementos por acoplamiento */    
         
+   
     }
 
-    .nombre {
-        padding: 4px 0 0 40px;
-        font-family:'Times New Roman', Times, serif;
-        font-size: 55px;
-    }
     .navbar {
+
         padding: 1rem;
         background-color: #C60808;
+    
+        
     }
 
     .nav-link {
         color :#FFF;
     }
+
+
+
     
     .navbar-collapse {
+
+        
         align-items: center;
         justify-content: end;
+
+
     }
 
-    /* .container-redesSociales-menu {
+    
+    
+
+    .container-redesSociales-menu {
+
+        
         background-color:  #C60808;
         justify-content: end;
-    } */
+
+
+
+    }
 
     .container-redesSociales-footer {
-        background-color: #f30606;
-        justify-content: flex-end;
+
+    
+        background-color: #C60808;
+
+
     }
 
     .footer {
-        background-color:  hsl(0, 94%, 49%);
+        background-color:  #C60808;
         text-align: center;
         display: flex;
         flex-direction: left;
         justify-content: right;
-        color: #C60808;
+        color: white;
         justify-content: end;
     
     }
 
 
     .img-1 {
+
         fill:#fefefe !important;
         font-size: 30px;
     }
+
 
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -74,10 +94,12 @@
         padding-top: 170px;   /* espacio para que no quede tapado por la cabecera fija el texto inicial */
         /*background: -webkit-radial-gradient(-30% 70%, rgb(241, 227, 227) 10%, rgb(237, 233, 217) 40%, rgb(244, 238, 243) 60%); */
         /*background: linear-gradient(rgb(241, 227, 227), rgb(237, 233, 217), rgb(244, 238, 243), rgb(235, 129, 168)); */
-        background: #f6acac;
+        background: #f3eaea;
     }
+
     
     p {
+
         margin-bottom: 1.6em;
     }
 
@@ -111,63 +133,72 @@
         background-color: #741818;
         border: none;
         border-radius: 15px;
-        /*box-shadow: 0 9px #999; */
+        box-shadow: 0 9px #333;  
     }
 
-    .btn:hover {background-color: #f147c7}
+    .btn:hover {background-color: #f18c8c}
         
     .btn:active {
         background-color: #287890;
-        box-shadow: 0 10px #666;
+        box-shadow: 0 5px #666;
         transform: translateY(4px);
         color: #FFF;
     }
- 
+
+  
 
 /* Main  */
    
    .slider {
+
         width: 95%;
         margin: auto;
         overflow: hidden;
-    }
+       
+
+   }
    
    .slider ul {
         display: flex;
         padding: 0;
         width: 400%;
+
         animation: cambioFoto 20s infinite alternate linear;
-    }
- 
-    .slider li {
+   }
+   .slider li {
         width: 100%;
         list-style: none;
-    }
+   }
     
-    .slider img {
+   .slider img {
         width: 100%;
 
-    }
-    
-    /* Ajusto el tamaño de las imagenes dentro del contenedor padre */
-    .slider img {          
+   }
+    /* Ajusto el tamaño de las imagenes dentro del contenero padre */
+   .slider img {          
         width: 100%;
         height: 500px;
         object-fit: cover;    /* la imagen se ajusta al tamaño del padre */
-    }
 
-    /* controla los estilos de los parrafos debajo de cada foto del slider */
-    .p-sedes {
+        
+   }
+
+   /* controla los estilos de los parrafos debajo de cada foto del slider */
+   .p-sedes {
         top: 50%;
         left: 50%;  
         text-size-adjust:initial ;
         color: wheat;
         font-size: 30px;
         background-color: #333;
-    }
+        
+   }
     
-    /* configuro las paradas de cada foto */ 
-    @keyframes cambioFoto {
+ 
+
+   /* configuro las paradas de cada foto */ 
+   @keyframes cambioFoto {
+
         0% {margin-left: 0;}
         20% {margin-left: 0; }
 
@@ -179,26 +210,14 @@
 
         75% {margin-left: -300%;}
         100% {margin-left: -300%; }
-    }
+    
+   }
 
-    .titulo {
+   .titulo {
+
         color: #5d0404;
-    }
+   }
    
-    .container-imagenes-index {
-        display: inline-block;
-        padding: 5px;
-        box-sizing: border-box;
-    }
-
-    .img-index{
-        object-fit: cover;
-        width:70%;
-        height:70%;
-        border-top-left-radius: 400px 200px;
-        border-radius: 50%;
-        filter: drop-shadow(20px  20px 20px #333 );
-    }
 
    
    .container-imagenes-index {
@@ -225,15 +244,12 @@
   }
  
    
-    .row {
+   .row {
         justify-content: center;
-    }
-
-
+   }
 
    
    .img-circle-index {
-
         background: rgb(240, 161, 202);
         border-radius: 50%;
         width: 300px;
@@ -241,5 +257,7 @@
         filter: drop-shadow(20px  20px 20px #333 );
         z-index: 1;   /* ordena los elementos por acoplamiento */
     }
+
+
   
 /* FOTTER */
