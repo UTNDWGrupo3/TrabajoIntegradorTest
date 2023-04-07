@@ -57,12 +57,13 @@
         margin-bottom: 1.6em;
     }
 
-    /*descativado clase container */
-    .container1 {
-        width: 85%;
-        max-width: 850px;
-        margin: 0 auto;
+    .texto {
+        margin-bottom: 1.6em;
+        color:#333;
+
     }
+
+    
 
     .header {
         background: #C60808;
