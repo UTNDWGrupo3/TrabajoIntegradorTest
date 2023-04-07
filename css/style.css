@@ -186,6 +186,17 @@
         filter: drop-shadow(20px  20px 20px #333 );
 
     }
+
+
+    .img-circle-logo {
+        background: rgb(240, 161, 202);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        filter: drop-shadow(20px  20px 20px #333 );
+        z-index: 1;   /* ordena los elementos por acoplamiento */
+    }
+
    
     .row {
         justify-content: center;
