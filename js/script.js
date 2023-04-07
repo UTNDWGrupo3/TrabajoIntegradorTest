@@ -73,7 +73,16 @@ function crearPDF()
     let today = new Date();
 
     // Obtengo la fecha y hora 
-    let now = today.toLocaleDateString("en-GB");
+    let fecha = today.toLocaleDateString("en-GB");
+    let date = new Date();
+    let horas , minutos, segundos, milisegundos;
+    horas = date.getHours();
+    minutos = date.getMinutes();
+    segundos = date.getSeconds();
+    milisegundos = date.getMilliseconds();
+
+
+    
     
     var doc = new jsPDF();
     
@@ -82,7 +91,7 @@ function crearPDF()
     doc.text(20,y = y + 10,"_______________________________________________________________________________");
     doc.text(20,y = y + 10, "F I T N E S S   C L U B - GYM")
     doc.text(20,y = y + 10,"________________________________________________________________________________");
-    doc.text(20,y = y + 10, "Mensaje generado:" + now );
+    doc.text(20,y = y + 10, "Mensaje generado:" + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos );
     
     doc.text(20,y = y + 10,"Nombre:" + nombre);
     doc.text(20,y = y + 10,"Apellido: " + apellido);
@@ -92,7 +101,7 @@ function crearPDF()
     doc.text(20,y = y + 10,"Comentario: " + comentario);
     doc.text(20,y = y + 10,"_________________________________________________________________________________");
     
-    doc.save('Contacto.pdf');
+    doc.save('Contacto'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
     
 
 
