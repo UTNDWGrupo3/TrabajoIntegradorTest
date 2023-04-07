@@ -54,11 +54,12 @@ function validoFrmContacto() {
     // controlo rango de edad
     if (frmContato.edad.value != "")
     {
-        if (frmContato.edad.value < 1 && frmContato.edad.value > 110)
+        if (parseInt(frmContato.edad.value) < 1 || parseInt(frmContato.edad.value) > 110)
         {
             alert("Debe ingresar una edad  valida. (rango 1 a 110). Gracias")
             resultado = "ERR";
         }
+        
     }
 
     return resultado;
