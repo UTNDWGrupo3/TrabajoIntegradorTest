@@ -50,7 +50,16 @@ function validoFrmContacto() {
         alert("Complete el campo comentario");
         resultado = "ERR";
     };
-
+    
+    // controlo rango de edad
+    if (frmContato.edad.value != "")
+    {
+        if (frmContato.edad.value < 1 && frmContato.edad.value > 110)
+        {
+            alert("Debe ingresar una edad  valida. (rango 1 a 110). Gracias")
+            resultado = "ERR";
+        }
+    }
 
     return resultado;
 
@@ -88,20 +97,21 @@ function crearPDF()
     
     let y = 10;
 
-    doc.text(20,y = y + 10,"_______________________________________________________________________________");
-    doc.text(20,y = y + 10, "F I T N E S S   C L U B - GYM")
-    doc.text(20,y = y + 10,"________________________________________________________________________________");
-    doc.text(20,y = y + 10, "Mensaje generado:" + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos );
+    doc.text(0,y = y + 10,"_______________________________________________________________________________");
+    doc.text(20,y = y + 20, "F I T N E S S   C L U B")
+    doc.text(0,y = y + 10,"________________________________________________________________________________");
     
-    doc.text(20,y = y + 10,"Nombre:" + nombre);
-    doc.text(20,y = y + 10,"Apellido: " + apellido);
-    doc.text(20,y = y + 10,"Edad: " + edad);
-    doc.text(20,y = y + 10,"Email: " + email);
-    doc.text(20,y = y + 10,"Telefono: " + telefono);
-    doc.text(20,y = y + 10,"Comentario: " + comentario);
-    doc.text(20,y = y + 10,"_________________________________________________________________________________");
     
-    doc.save('Contacto'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
+    doc.text(20,y = y + 10,"Nombre          : " + nombre);
+    doc.text(20,y = y + 10,"Apellido          : " + apellido);
+    doc.text(20,y = y + 10,"Edad              : " + edad);
+    doc.text(20,y = y + 10,"Email             : " + email);
+    doc.text(20,y = y + 10,"Telefono        : " + telefono);
+    doc.text(20,y = y + 10,"Comentario   : " + comentario);
+    doc.text(0,y = y + 10,"_________________________________________________________________________________");
+    doc.text(20,y = y + 10, "Mensaje generado el: " + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos );
+
+    doc.save('DatosContacto'+'_'+apellido+nombre+'_'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
     
 
 
