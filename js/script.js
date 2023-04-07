@@ -10,11 +10,17 @@ frmContato.addEventListener("submit", function(event)  {
 
     if (validoFrmContacto() === "OK")
     {
+        //
+
         // envio datos al pdf 
+        crearPDF();
     }
 
 } 
 );
+
+
+
 
 // valido que los campos obligatorios se encuentre cargados
 function validoFrmContacto() {
@@ -51,3 +57,43 @@ function validoFrmContacto() {
 
 }
 
+// funcion para generar PDF
+function crearPDF()
+{
+    // guardo en variables los campos del formulario 
+    let nombre = document.querySelector("#nombre").value,
+        apellido = document.querySelector("#apellido").value,
+        edad = document.querySelector("#edad").value,
+        email = document.querySelector("#email").value,
+        telefono = document.querySelector("#telefono").value,
+        comentario = document.querySelector("#comentario").value;
+    // obtengo la fecha y hora actual
+    
+    // creo un objeto nuevo date 
+    let today = new Date();
+
+    // Obtengo la fecha y hora 
+    let now = today.toLocaleDateString("en-GB");
+    
+    var doc = new jsPDF();
+    
+    let y = 10;
+
+    doc.text(20,y = y + 10,"_______________________________________________________________________________");
+    doc.text(20,y = y + 10, "F I T N E S S   C L U B - GYM")
+    doc.text(20,y = y + 10,"________________________________________________________________________________");
+    doc.text(20,y = y + 10, "Mensaje generado:" + now );
+    
+    doc.text(20,y = y + 10,"Nombre:" + nombre);
+    doc.text(20,y = y + 10,"Apellido: " + apellido);
+    doc.text(20,y = y + 10,"Edad: " + edad);
+    doc.text(20,y = y + 10,"Email: " + email);
+    doc.text(20,y = y + 10,"Telefono: " + telefono);
+    doc.text(20,y = y + 10,"Comentario: " + comentario);
+    doc.text(20,y = y + 10,"_________________________________________________________________________________");
+    
+    doc.save('Contacto.pdf');
+    
+
+
+}
