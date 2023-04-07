@@ -1,105 +1,59 @@
 /* Header */
 
-
     * {
-
-        margin: 0;
-        padding: 0;
+        margin: 0; 
+        padding: 0; 
         box-sizing: border-box;
-
     }
-
-
-
 
     /* Deja fijo el menu */
     .header {
         position:fixed;
         top: 0;
         width: 100%;
+        overflow: hidden;
         z-index: 3;    /* orden los elementos por acoplamiento */    
-        
-   
     }
 
     .navbar {
-
         padding: 1rem;
         background-color: #C60808;
-    
-        
     }
 
     .nav-link {
         color :#FFF;
+        float: right;
+        font-weight: bold;
     }
-
-
-
-    
+   
     .navbar-collapse {
-
-        
         align-items: center;
         justify-content: end;
-
-
     }
 
-    
-    
-
-    .container-redesSociales-menu {
-
-        
-        background-color:  #C60808;
-        justify-content: end;
-
-
-
+    .nombre {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 85px;
+        float: left;
+        margin-left: 30px;
     }
-
-    .container-redesSociales-footer {
-
-    
-        background-color: #C60808;
-
-
-    }
-
-    .footer {
-        background-color:  #C60808;
-        text-align: center;
-        display: flex;
-        flex-direction: left;
-        justify-content: right;
-        color: white;
-        justify-content: end;
-    
-    }
-
 
     .img-1 {
-
         fill:#fefefe !important;
         font-size: 30px;
     }
 
-
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #333;
-        font-size: 1.2rem;
+        font-size: 19.2px;
         line-height: 1.6em;
         padding-top: 170px;   /* espacio para que no quede tapado por la cabecera fija el texto inicial */
-        /*background: -webkit-radial-gradient(-30% 70%, rgb(241, 227, 227) 10%, rgb(237, 233, 217) 40%, rgb(244, 238, 243) 60%); */
-        /*background: linear-gradient(rgb(241, 227, 227), rgb(237, 233, 217), rgb(244, 238, 243), rgb(235, 129, 168)); */
-        background: #f3eaea;
+        background: rgb(250,249,251);
+        background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(253,135,29,1) 100%);
     }
-
     
     p {
-
         margin-bottom: 1.6em;
     }
 
@@ -123,8 +77,8 @@
     /* estilo de los botones */
     .btn {
         display: inline-block;
-        padding: 15px 25px;
-        font-size: 14px;
+        padding: 10px 20px;
+        font-size: 15px;
         cursor: pointer;
         text-align: center;	
         text-decoration: none;
@@ -133,10 +87,11 @@
         background-color: #741818;
         border: none;
         border-radius: 15px;
-        box-shadow: 0 9px #333;  
+        box-shadow: 6px 6px 10px #333;
+        transition: all 500ms ease;
     }
 
-    .btn:hover {background-color: #f18c8c}
+    .btn:hover {background-color: rgba(253,135,29,1)}
         
     .btn:active {
         background-color: #287890;
@@ -145,60 +100,49 @@
         color: #FFF;
     }
 
-  
-
 /* Main  */
    
-   .slider {
-
+    .slider {
         width: 95%;
         margin: auto;
         overflow: hidden;
-       
-
-   }
+    }
    
-   .slider ul {
+    .slider ul {
         display: flex;
         padding: 0;
         width: 400%;
-
         animation: cambioFoto 20s infinite alternate linear;
-   }
-   .slider li {
+    }
+
+    .slider li {
         width: 100%;
         list-style: none;
-   }
+    }
     
-   .slider img {
+    .slider img {
         width: 100%;
+    }
 
-   }
     /* Ajusto el tamaño de las imagenes dentro del contenero padre */
-   .slider img {          
+    .slider img {          
         width: 100%;
         height: 500px;
         object-fit: cover;    /* la imagen se ajusta al tamaño del padre */
+    }
 
-        
-   }
-
-   /* controla los estilos de los parrafos debajo de cada foto del slider */
-   .p-sedes {
+    /* controla los estilos de los parrafos debajo de cada foto del slider */
+    .p-sedes {
         top: 50%;
         left: 50%;  
-        text-size-adjust:initial ;
-        color: wheat;
+        text-size-adjust: initial;
+        color: rgba(253,135,29,1);
         font-size: 30px;
-        background-color: #333;
-        
-   }
+        /* background-color: #4e3232; */
+    }
     
- 
-
-   /* configuro las paradas de cada foto */ 
-   @keyframes cambioFoto {
-
+    /* configuro las paradas de cada foto */ 
+    @keyframes cambioFoto {
         0% {margin-left: 0;}
         20% {margin-left: 0; }
 
@@ -210,54 +154,106 @@
 
         75% {margin-left: -300%;}
         100% {margin-left: -300%; }
-    
-   }
+    }
 
-   .titulo {
-
+    .titulo {
         color: #5d0404;
-   }
-   
-
-   
-   .container-imagenes-index {
-
+    }
+    
+    .container-imagenes-index {
         display: inline-block;
         padding: 5px;
         box-sizing: border-box;
-        
-
-
-   }
+    }
    
-
-  
-   
-  .img-borde-izquierdo-curvo-index{
-    object-fit: cover;
-    width:70%;
-    height:70%;
-    border-top-left-radius: 400px 200px;
-    /*border-radius: 50%;*/
-    filter: drop-shadow(20px  20px 20px #333 );
-
-  }
+    .img-borde-izquierdo-curvo-index{
+        object-fit: cover;
+        width:80%;
+        height:70%;
+        border-top-left-radius: 260px 200px;
+        filter: drop-shadow(20px  20px 20px #333 );
+    }
  
+    .img-borde-derecho-curvo-index{
+        object-fit: cover;
+        width:80%;
+        height:70%;
+        border-top-right-radius: 260px 200px;
+        filter: drop-shadow(20px  20px 20px #333 );
+    }
    
-   .row {
+    .row {
         justify-content: center;
    }
 
-   
-   .img-circle-index {
-        background: rgb(240, 161, 202);
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
-        filter: drop-shadow(20px  20px 20px #333 );
-        z-index: 1;   /* ordena los elementos por acoplamiento */
+   /* Formulario de Contacto  */
+   #contacto{
+        background: rgb(251,248,248);
+        background: linear-gradient(0deg, rgba(251,248,248,1) 0%, rgba(245,5,5,1) 100%);
     }
 
+   .conta{
+        margin-left: 4.8em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 3.75em;
+        color: #FFF;
+    }
 
+   .refe{
+        margin-left: 5em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: auto;
+
+    }
+
+    .ingresos{
+        margin-left: 12.5em;
+        padding: 0.3125em;
+        border-radius: 0.625em;
+        background-color: rgb(249, 212, 198);
+        margin-bottom: 1.875em;
+        box-shadow: 4px 4px 10px #333;
+    }
+
+    .ingresos1{
+        margin-left: 12.5em;
+        padding: 0.3125em;
+        border-radius: 0.625em;
+        background-color: rgb(249, 212, 198);
+        box-shadow: 4px 4px 10px #333;
+    }
+
+    .envio{
+        margin-left: 13.2em;
+        display: inline-block;
+        padding: 0.625em 1.25em;
+        font-size: 0.9375em;
+        cursor: pointer;
+        text-align: center;	
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #741818;
+        border: none;
+        border-radius: 0.9375em;
+        box-shadow: 6px 6px 10px #333;
+        transition: all 500ms ease;
+    }
+
+    .envio:hover {background-color: rgba(253,135,29,1)}
   
 /* FOTTER */
+
+    .footer {
+        background-color:  #C60808;
+        text-align: center;
+        display: flex;
+        flex-direction: left;
+        justify-content: right;
+        color: white;
+        justify-content: end;
+    }
+
+    .container-redesSociales-footer {
+        background-color: #C60808;
+    }
