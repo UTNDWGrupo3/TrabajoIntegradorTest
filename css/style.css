@@ -1,11 +1,41 @@
+/* Manejo de fuentes instalada localmente */
+/*@import url('./fonts/FasterOne-Regular.ttf');*/
+@font-face {
+    font-family: 'Faster One';
+    src: url('./fonts/FasterOne-Regular.ttf');
+}
+
+
+.fasterOne {
+    font-family: 'Faster One', cursive;
+    
+}
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
 /* Header */
 
-    * {
-        margin: 0; 
-        padding: 0; 
-        box-sizing: border-box;
-    }
+    
 
+   
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    /*padding-top: 170px;*/ /* este espacio lo genera la clase ancla */  /* espacio para que no quede tapado por la cabecera fija el texto inicial */
+    background: rgb(250,249,251);
+    background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(253,135,29,1) 100%);
+}
+
+
+<<<<<<< HEAD
     /* Deja fijo el menu */
     header {
         position:fixed;
@@ -14,6 +44,8 @@
         overflow: hidden;
         z-index: 3;    /* orden los elementos por acoplamiento */    
     }
+=======
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 
     .navbar {
         padding: 1rem;
@@ -31,8 +63,8 @@
     }
 
     .nombre {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 85px;
+        /*font-family: 'Times New Roman', Times, serif;*/
+        font-size: 55px;
         float: left;
         margin-left: 60px;
     }
@@ -42,6 +74,7 @@
         font-size: 30px;
     }
 
+<<<<<<< HEAD
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         color: #333;
@@ -53,23 +86,34 @@
     }
     
     p {
+=======
+    /*p {
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
         margin-bottom: 1.6em;
     }
-
+    */
     .texto {
         margin-bottom: 1.6em;
         color:#333;
     }
 
+<<<<<<< HEAD
+=======
+    .texto-1 {
+        margin-bottom: 0.6em;
+        font-size: 50%;
+        color:#333;
+
+    }
+
+    
+
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
     .header {
-        background: #C60808;
+         
         color: white;
     }
 
-    .log-nav-container {
-        display: flex;
-        justify-content: space-between;
-    }
 
     /* estilo de los botones */
     .btn {
@@ -88,14 +132,15 @@
         transition: all 500ms ease;
     }
 
-    .btn:hover {background-color: rgba(253,135,29,1)}
+    .btn-hover:hover {background-color: rgba(253,135,29,1)}
         
-    .btn:active {
-        background-color: #287890;
+    .btn-active:active {
+        background-color: #cc0404;
         box-shadow: 0 5px #666;
         transform: translateY(4px);
         color: #FFF;
     }
+
 
 /* Main  */
    
@@ -160,6 +205,24 @@
         display: inline-block;
         padding: 5px;
         box-sizing: border-box;
+       
+    }
+
+
+     
+
+  
+       
+    .imagen-hover-gris:hover{
+         
+        filter: grayscale(80%);
+
+        
+    }
+
+    .imagen-hover-gris-sombra:hover{
+
+         filter: drop-shadow(20px  20px 20px #333 )  grayscale(80%) ;
     }
    
     .img-borde-izquierdo-curvo-index{
@@ -185,6 +248,27 @@
         border-top-right-radius: 200px 200px;
         filter: drop-shadow(20px  20px 20px #333 );
     }
+
+
+    .img-rectangular-bordes-redondeados {
+        object-fit: cover;
+        width:80%;
+        height:70%;
+        border-radius: 35px;
+        filter: drop-shadow(20px  20px 20px #333 );
+
+    }
+
+
+    .img-circle-logo {
+        background: rgb(240, 161, 202);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        filter: drop-shadow(20px  20px 20px #333 );
+        z-index: 1;   /* ordena los elementos por acoplamiento */
+    }
+
    
     .row {
         justify-content: center;
@@ -206,37 +290,55 @@
     }
 
    .conta{
-        margin-left: 4.8em;
+        margin-left: 8rem;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 3.75em;
+        font-size: 60px;
         color: #FFF;
     }    
 
    .refe{
-        margin-left: 5em;
+        margin-left: 8rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         width: auto;
     }
 
+    /* estilo campo del formulario */
     .ingresos{
-        margin-left: 12.5em;
-        padding: 0.3125em;
-        border-radius: 0.625em;
+        margin-left: 200px;
+        padding: 5px;
+        border-radius: 10px;
         background-color: rgb(249, 212, 198);
+<<<<<<< HEAD
         margin-bottom: 1.875em;
         box-shadow: 8px 8px 13px #333;
         cursor: pointer;
+=======
+        margin-bottom: 30px;
+        box-shadow: 4px 4px 10px #333;
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
     }
+    
 
+<<<<<<< HEAD
     .ingreso1{
         margin-left: 12.5em;
         padding: 0.3125em;
         border-radius: 0.625em;
+=======
+
+    /* estilo campo comentario */
+    .ingresos1{
+        width: 750px;
+        margin-left: 200px;
+        padding: 5px;
+        border-radius: 10px;
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
         background-color: rgb(249, 212, 198);
         box-shadow: 8px 8px 13px #333;
         cursor: pointer;
     }
 
+<<<<<<< HEAD
     .ingresos:hover{
         box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
         transition: box-shadow 0.3s ease;
@@ -291,8 +393,132 @@
     .ancla {
         padding-top: 10rem; /* es el ancho de mi cabecera fija */
     }
+=======
+    .texto-contacto{
+        /*font-family: 'Times New Roman', Times, serif;*/
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    .envio-margin-left{
+        margin-left: 1100px;
+       
+    }
+    
+ 
+    .aNosotros{
+        margin-left: 8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        
+        color: #333;
+    }
+
+
+    .ancla  {
+        padding-top: 190px; /* es el ancho de mi cabecera fija, para que no se tape el contenido debajo de la cabecera */
+    }
+
+
+    #plan-1 {
+        border:3px solid orange;
+        border-radius: 22px;
+        background-color: black;
+        text-align: center;
+        color:antiquewhite;
+    }
+
+    #plan-2 {
+        border:3px solid orange;
+        border-radius: 22px;
+        background-color: rgb(92, 2, 2);
+        text-align: center;
+        color:antiquewhite;
+    }
+
+    #plan-3 {
+        border:3px solid orange;
+        border-radius: 22px;
+        background-color: rgb(227, 19, 130);
+        text-align: center;
+        color:antiquewhite;
+    }
+
+    .sombra-planes {
+
+        box-shadow: 5px 5px 15px gray;
+     }
+    
+     #step-1 {
+        border:3px solid orange;
+        border-radius: 22px;
+        background-color:  rgba(63, 61, 61, 0.15);
+        text-align: center;
+        color:antiquewhite;
+    }
+
+    #summary {
+        
+        border-radius: 22px;
+        background-color:  rgba(63, 61, 61, 0.15); 
+        text-align: left;
+        color: #333;
+        padding: 10px;
+        
+    }
+
+    
+    .input-cotizacion{
+        padding: 5px;
+        border-radius: 10px;
+        background-color: rgb(249, 212, 198);
+        margin-bottom: 30px;
+        box-shadow: 4px 4px 10px #333;
+        
+    }
+   
+    
+
+     /* Para controlar formulario de dos pasos */
+
+     form {
+        margin-bottom: 20px;
+      }
+      
+      #step-1 {
+        display: none;
+      }
+
+      #step-2 {
+        display: none;
+      }
+      
+      .step-2 {
+        border:3px solid orange;
+        border-radius: 10px;   
+
+      }
+     
+
+      .envio-cotizacion-pdf-margin-left {
+
+        margin-left: 1100px;
+      
+
+      }
+
+      .p-333 {
+        color: #333;
+      }
+
+     /* fin control formulario de dos pasos */
+     
+     
+     
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
   
-/* FOTTER */
+/* FOOTER */
 
     footer {
         background-color:  #C60808;
@@ -301,7 +527,7 @@
         flex-direction: column;
         justify-content: right;
         color: white;
-        justify-content: end;
+        justify-content:space-between ;
     }
 
     .logo-footer{
@@ -311,5 +537,20 @@
 
     .container-redesSociales-footer {
         background-color: #C60808;
+<<<<<<< HEAD
         float: right;
     }
+=======
+    }
+
+    .a-footer {
+
+        text-decoration: none;
+        color: whitesmoke;
+    } 
+
+.espaciado {
+
+    padding-top: 60px;
+}
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
