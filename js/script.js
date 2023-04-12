@@ -1,5 +1,3 @@
-// declaro variables 
-
 
 // manejo datos de formulario de contacto 
 const frmContato = document.getElementById("frmContacto");
@@ -10,16 +8,13 @@ frmContato.addEventListener("submit", function(event)  {
 
     if (validoFrmContacto() === "OK")
     {
-        //
-
         // envio datos al pdf 
         crearPDF();
+    
+        frmContato.reset();
     }
-
 } 
 );
-
-
 
 
 // valido que los campos obligatorios se encuentre cargados
@@ -28,25 +23,26 @@ function validoFrmContacto() {
     let resultado="OK";
 
     if (frmContato.nombre.value == "") {
-
         alert("Complete el campo nombre");
         resultado = "ERR";
         
-    } else  if (frmContato.apellido.value == "") {
-
+    } else if (frmContato.apellido.value == "") {
         alert("Complete el campo apellido");
         resultado = "ERR";
 
     } else if (frmContato.edad.value == "") {
-
         alert("Complete el campo edad");
         resultado = "ERR";
-    } else  if (frmContato.email.value == "") {
 
+    } else  if (frmContato.email.value == "") {
         alert("Complete el campo email");
         resultado = "ERR";
-    } else if (frmContato.comentario.value == "") {
 
+    } else if(frmContato.telefono.value == ""){
+        alert("Complete su número de teléfono");
+        resultado = "ERR";
+
+    } else if (frmContato.comentario.value == "") {
         alert("Complete el campo comentario");
         resultado = "ERR";
     };
@@ -54,18 +50,20 @@ function validoFrmContacto() {
     // controlo rango de edad
     if (frmContato.edad.value != "")
     {
-        if (parseInt(frmContato.edad.value) < 1 || parseInt(frmContato.edad.value) > 110)
+        if (parseInt(frmContato.edad.value) < 5 || parseInt(frmContato.edad.value) > 90)
         {
-            alert("Debe ingresar una edad  valida. (rango 1 a 110). Gracias")
+            alert("Debe ingresar una edad  valida. (rango 5 a 90). Gracias")
             resultado = "ERR";
         }
-        
     }
 
     return resultado;
+    
 
-
+     
+    
 }
+
 
 // funcion para generar PDF
 function crearPDF()
@@ -77,23 +75,20 @@ function crearPDF()
         email = document.querySelector("#email").value,
         telefono = document.querySelector("#telefono").value,
         comentario = document.querySelector("#comentario").value;
-    // obtengo la fecha y hora actual
-    
-    // creo un objeto nuevo date 
-    let today = new Date();
 
-    // Obtengo la fecha y hora 
-    let fecha = today.toLocaleDateString("en-GB");
-    let date = new Date();
-    let horas , minutos, segundos, milisegundos;
-    horas = date.getHours();
-    minutos = date.getMinutes();
-    segundos = date.getSeconds();
-    milisegundos = date.getMilliseconds();
-
-
+     // obtengo la fecha y hora actual
     
-    
+     // creo un objeto nuevo date 
+     let today = new Date();
+
+     // Obtengo la fecha y hora 
+     let fecha = today.toLocaleDateString("en-GB");
+     let date = new Date();
+     let horas , minutos, segundos, milisegundos;
+     horas = date.getHours();
+     minutos = date.getMinutes();
+     segundos = date.getSeconds();
+      
     var doc = new jsPDF();
     
     let y = 10;
@@ -110,10 +105,8 @@ function crearPDF()
     doc.text(20,y = y + 10,"Telefono        : " + telefono);
     doc.text(20,y = y + 10,"Comentario   : " + comentario);
     doc.text(0,y = y + 10,"_________________________________________________________________________________");
-    doc.text(20,y = y + 10, "Mensaje generado el: " + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos );
+    doc.text(20,y = y + 10, "Mensaje generado el: " + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos);
 
-    doc.save('DatosContacto'+'_'+apellido+nombre+'_'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
-    
-
+    doc.save('DatosContacto'+'_'+apellido+nombre+'_'+fecha+'_'+horas+minutos+segundos+'.pdf');
 
 }
