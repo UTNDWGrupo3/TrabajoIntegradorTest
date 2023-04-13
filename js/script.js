@@ -35,6 +35,9 @@ nextBtnP1.addEventListener("click", function() {
     step1.style.display = "block";  
     step2.style.display = "none";
     frmPaso1.reset(); 
+    /* vuelvo al color original el fondo del campo */
+    document.querySelector("#name-coti").style.backgroundColor = "#f9d4c6";
+    document.querySelector("#email-coti").style.backgroundColor = "#f9d4c6";
    
 
 });
@@ -51,6 +54,9 @@ nextBtnP2.addEventListener("click", function() {
     step1.style.display = "block";  
     step2.style.display = "none";
     frmPaso1.reset(); 
+    /* vuelvo al color original el fondo del campo */
+    document.querySelector("#name-coti").style.backgroundColor = "#f9d4c6";
+    document.querySelector("#email-coti").style.backgroundColor = "#f9d4c6";
       
     
    
@@ -68,6 +74,9 @@ nextBtnP3.addEventListener("click", function() {
     step1.style.display = "block";  
     step2.style.display = "none";
     frmPaso1.reset(); 
+    /* vuelvo al color original el fondo del campo */
+    document.querySelector("#name-coti").style.backgroundColor = "#f9d4c6";
+    document.querySelector("#email-coti").style.backgroundColor = "#f9d4c6";
    
     
    
@@ -90,6 +99,18 @@ nextBtnCotizar.addEventListener("click", function() {
         step1.style.display = "none";  
         step2.style.display = "block";  
         muestroCotizacion(nombre, email, planSeleccionado);
+    }
+    else
+    {
+        if (nombre=="")
+        {
+             document.querySelector("#name-coti").style.backgroundColor = "#f89696";
+        }
+        if (email=="")
+        {
+             document.querySelector("#email-coti").style.backgroundColor = "#f89696";
+        }
+
     };
 
 
@@ -170,6 +191,15 @@ frmContacto.addEventListener("submit", function(event)  {
         // fuerzo limpieza de los campos del formulario
 
         frmContacto.reset();
+
+        frmContacto.nombre.style.backgroundColor = "#f9d4c6";
+        frmContacto.apellido.style.backgroundColor = "#f9d4c6";
+        frmContacto.edad.style.backgroundColor = "#f9d4c6";
+        frmContacto.email.style.backgroundColor = "#f9d4c6";
+        frmContacto.telefono.style.backgroundColor = "#f9d4c6";
+        frmContacto.comentario.style.backgroundColor = "#f9d4c6";
+
+        
     };
 
 } 
@@ -207,25 +237,32 @@ function validoFrmContacto() {
     let resultado="OK";
 
     if (frmContacto.nombre.value == "") {
-
+        frmContacto.nombre.style.backgroundColor = "#f89696";
         alert("Complete el campo nombre");
+        
+        
         resultado = "ERR";
         
     } else  if (frmContacto.apellido.value == "") {
-
+        frmContacto.apellido.style.backgroundColor = "#f89696";
         alert("Complete el campo apellido");
         resultado = "ERR";
 
     } else if (frmContacto.edad.value == "") {
-
+        frmContacto.edad.style.backgroundColor = "#f89696";
         alert("Complete el campo edad");
         resultado = "ERR";
     } else  if (frmContacto.email.value == "") {
-
+        frmContacto.email.style.backgroundColor = "#f89696";
         alert("Complete el campo email");
         resultado = "ERR";
+    } else  if (frmContacto.telefono.value == "") {
+        frmContacto.telefono.style.backgroundColor = "#f89696";
+        alert("Complete el campo telefono");
+        resultado = "ERR";    
     } else if (frmContacto.comentario.value == "") {
 
+        frmContacto.comentario.style.backgroundColor = "#f89696";
         alert("Complete el campo comentario");
         resultado = "ERR";
     };
@@ -235,6 +272,7 @@ function validoFrmContacto() {
     {
         if (parseInt(frmContacto.edad.value) < 1 || parseInt(frmContacto.edad.value) > 110)
         {
+            frmContacto.edad.style.backgroundColor = "#f89696";
             alert("Debe ingresar una edad  valida. (rango 1 a 110). Gracias")
             resultado = "ERR";
         }
