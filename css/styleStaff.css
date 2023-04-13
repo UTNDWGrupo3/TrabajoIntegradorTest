@@ -1,0 +1,90 @@
+
+
+/* Manejo de fuentes instalada localmente */
+/*@import url('./fonts/FasterOne-Regular.ttf');*/
+@font-face {
+    font-family: 'Faster One';
+    src: url('./fonts/FasterOne-Regular.ttf');
+}
+
+
+.fasterOne {
+    font-family: 'Faster One', cursive;
+    
+}
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+    /*padding-top: 170px;*/ /* este espacio lo genera la clase ancla */  /* espacio para que no quede tapado por la cabecera fija el texto inicial */
+    background: rgb(250,249,251);
+    background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(253,135,29,1) 100%);
+}
+
+
+
+.img-circle-logo {
+    background: rgb(240, 163, 56, 0.7);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(20px  20px 20px #333 );
+    z-index: 1;   /* ordena los elementos por acoplamiento */
+}
+
+
+.img-circle-staff {
+    background: rgb(240, 163, 56, 0.7);
+    border-radius: 50%;
+    /*width: 100px;
+    height: 100px;*/
+    filter: drop-shadow(20px  20px 20px #333 );
+    object-fit: cover;
+}
+
+
+
+
+/*
+*  {
+    background: linear-gradient(360deg, rgba(253,135,29,1) 0%, rgba(92, 2, 2)100%)
+
+};
+
+*/
+
+
+/* 
+    para manejar la primera caja */
+.caja1 {     
+    /*width: 350px; */
+    /*height: 400px;*/
+    color: darkkhaki;
+    border:3px solid brown;
+    border-radius: 22px;
+    background-color: rgb(255, 127, 210); /*no lo obedece*/
+    background: linear-gradient(360deg, rgba(253,135,29,1) 0%, rgba(92, 2, 2)100%);
+    text-align: center;
+    padding-top : 10px;
+    padding-bottom : 10px;
+}
+
+.sombra {
+
+   box-shadow: 5px 5px 15px gray;
+}
+ 
+
+.espacio {
+    padding-left: 15px;
+}
