@@ -440,7 +440,17 @@ body {
         filter: drop-shadow(10px  10px 10px #333 );
     }
     
-     /* Fin asociarse
+    .texto-impact {
+        font-family:Impact;
+        /*font:bold;*/
+        font-style: oblique;
+        color:whitesmoke;
+        /*float: left;*/
+        font-size: 40px;
+    }
+
+     /* Fin asociarse */
+     
   
 /* FOOTER */
 
