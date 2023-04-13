@@ -3,9 +3,9 @@ Para pruebas
 Trabajo Integrador diseño web Comisión 184 - Grupo 3.
 Integrantes: Marini Mariela,
              Marquez Ana,
-                     Viviana, 
+             Juarez Viviana, 
              Manresa Mauricio,
-                     Sergio,
+             Echevarne Sergio,
              Mourad Adrian. 
 
 Para pruebas Trabajo Integrador Grupo 3 Integrantes: Marini Mariela, Marquez Ana, Viviana, Manresa Mauricio, Sergio, Mourad Adrian.
