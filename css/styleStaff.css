@@ -93,8 +93,12 @@ body {
 .titulo-fondo {
     
   background-color:  #C60808;
-  color: #fff;
   
+  
+}
+
+.titulo-fondo-color-blanco {
+    color: #fff;
 }
 
 hr {
