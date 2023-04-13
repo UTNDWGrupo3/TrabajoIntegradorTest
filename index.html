@@ -1,252 +1,422 @@
 <!DOCTYPE html>
 <html lang="es">
 
-  <head>
+   <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+     <!-- Metadatos-->
+     <meta name="description" content="Somos un grupo de profesionales abocados al servicio del cuidado de tu cuerpo y salud">
+     <meta name="keywords" content="GYM, gimnasio, musculacion, cuerpo, salud, pesas, fuerza, adelgazar, bienestar, yoga">
+     <meta name="author" content="Grupo 3">
+     <title>Grupo &nbsp; III &nbsp; Fitness - by GRUPO III</title>
+  
+     <!-- Bootstrap Estilos-->
+     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css ">  
+  
+     <!-- Boostrap scripts-->
+     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script> 
 
-    <!-- Metadatos-->
-    <meta name="description" content="Somos un grupo de profesionales abocados al servicio del cuidado de tu cuerpo y salud">
-    <meta name="keywords" content="GYM, gimansio, musculacion, cuerpo, salud, pesas, fuerza, adelgazar, bienestar, yoga">
-    <meta name="author" content="Grupo 3">
+     <!-- jsPDF-->
+     <script src="./js/jspdf.min.js"></script>
+      
 
-    <title>Grupo &nbsp; III &nbsp; Fitness - by GRUPO III</title>
+     <!--Hoja de stylo propia-->
+     <link rel="stylesheet" href="./css/style.css">
 
-    <!-- Bootstrap Estilos-->
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css ">  
+     <!-- Icono de nuestro site-->
+     <!--<link rel="icon" href="./image/favicon.png"> -->
+     <link rel="icon" type="image/jpg" href="./image/favicon.jpg"/>
 
-    <!-- Boostrap scripts-->
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- jsPDF-->
-    <script src="./js/jspdf.min.js"></script>
-
-    <!--Hoja de stylo propia-->
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- Icono de nuestro site-->
-    <link rel="icon" type="image/jpg" href="./image/favicon.jpg"/>
-
-    <!-- Agrego meta para la etiqueta viewport -->
-    <meta name="viewport" content="width=device-width"/>
-
-  </head>
+   </head>
 
   <body>
-    
-  <!-- Header-->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <img class="img-circle-logo" src="./image/logo.jpg" alt="Grupo III Fitness" class="navbar-brand" width="110" height="80"> 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <h1 class="nombre">Grupo III Fitness</h1>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav d-flex justify-content-center align-items-center">
-              <li class="nav-item">
-                <a class="nav-link" href="#"><button type="button" class= "btn btn-danger">Inicio</button></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#QuienesSomos"><button type="button" class= "btn btn-danger">Quienes somos</button></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Asociarse"><button type="button" class= "btn btn-danger">Asociarse</button></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Contacto"><button type="button" class= "btn btn-danger">Contacto</button></a>
-              </li>
-            </ul>
-          </div>
-      </div>
-    </nav>
-  </header>
+     <div >
+            <!-- Header-->
+            <header class="header">
+                <nav class="navbar navbar-expand-lg fixed-top">
+                  <div class="container-fluid" >
+                    <img class="img-circle-logo" src="./image/logo.jpg" alt="Grupo III Fitness" class="navbar-brand" width="110" height="80"> 
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <h1 class="nombre fasterOne">Grupo III Fitness</h1>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <div class="nav ms-auto flex-md-row">
+                            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                              
+                              <li class="nav-item">
+                                <a class="nav-link" href="#slider-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Inicio</button></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#acercaDeNosotros-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Acerca de nosotros</button></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#asociarse-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Asociarse</button></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#contacto-ancla"><button type="button" class= "btn btn-hover btn-active btn-danger">Contacto</button></a>
+                              </li>
+                            </ul>
+                      </div>
 
-  <!-- Main-->
-  <main class="main">
-    <section id="slider">
-      <div class="slider">
-        <ul>
-          <li> 
-            <div class="imagen-1">
-              <img class="imagen" src="./image/Gym1.jpg" alt="Gym 1"> 
-              <div class="p-sedes">
-                <p>Sede CABA</p>
-              </div>
+                    </div>
+                  </div>
+                </nav>
+            </header>
+                  
+            <!-- Main-->
+            <main class="main">
+              <section id="slider">
+                <div class="ancla" id="slider-ancla"></div>
+                <div class="slider">
+                  <ul>
+                    <li> 
+                      <div class="imagen-1">
+                        <img class="imagen-hover-gris" src="./image/Gym1.jpg" alt="Sede CABA"> 
+                        <div class="p-sedes">
+                          <p>Sede CABA</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li> 
+                      <div class="imagen-2">
+                        <img class="imagen-hover-gris" src="./image/Gym2.jpg" alt="Sede Rosario" > 
+                        <div class="p-sedes">
+                          <p>Sede Rosario</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="imagen-3">
+                        <img class="imagen-hover-gris " src="./image/Gym3.jpg" alt="Sede Mendoza" > 
+                        <div class="p-sedes">
+                          <p>Sede Mendoza</p>
+                        </div>
+                      </div>    
+                    </li>
+                    <li>
+                      <div class="imagen-4">
+                        <img class="imagen-hover-gris" src="./image/Gym4.jpg" alt="Sede Córdoba" > 
+                        <div class="p-sedes">
+                          <p>Sede Córdoba</p>
+                        </div>
+                      </div>     
+                    </li>
+                  </ul>
+                </div>     
+              </section>
+
+              <section id="cuerpoPrincipal">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="titulo">
+                      
+                        <h2><strong>Trabajo personalizado para mujeres</strong> </h2>
+                      </div> 
+                      <br>  
+                      <p class="texto p-333">Lográ tu mejor figura con entrenamientos personalizados y exclusivos, adaptados a tus condiciones 
+                        personales, podrás ver resultados asegurados en sólo 90 días.</p>
+                    </div>
+                    <div class="col">
+                      <div class="container-imagenes-index">
+                        <img class="img-rectangular-bordes-redondeados imagen-hover-gris-sombra " src="./image/strong-women-planking.jpg" alt="mujeres haciendo ejercicio"> 
+                      </div>     
+                    </div>
+                  </div>   
+                  <br>
+                  <br>
+                  <br>
+                  <div class="row">
+                    <div class="col">
+                      <div class="container-imagenes-index">
+                        <img class="img-rectangular-bordes-redondeados imagen-hover-gris-sombra " src="./image/arm-back-muscles.jpg" alt="mujeres haciendo ejercicio"> 
+                      </div>     
+                    </div>
+                    <div class="col">
+                      <div class="titulo">
+                        <h2><strong>Sobrecarga y musculación</strong> </h2>
+                      </div> 
+                      <br>  
+                      <p class="texto p-333" >Planes especiales diagramados para quemar calorías y también para aumentar masa musucular, podrás ver los
+                        resultados en un corto plazo, no más de 90 días de ejercitación.</p>
+                    </div>
+                    
+                  </div>   
+                  <br>
+                  <br>
+                  <br>
+                  <div class="row">
+                    <div class="col">
+                      <div class="titulo">
+                      
+                        <h2><strong>Clases de tango, danzas clásicas y bailes modernos de todo tipo</strong> </h2>
+                      </div> 
+                      <br>  
+                      <p class="texto p-333">Unite a nuestras clases de bailes y obtené la figura que deseas con un método divertido y con mínimo
+                        esfuerzo, te sorprenderás de ver resultados en forma casi inmediata, en 45 días.</p>
+                    </div>
+                    <div class="col">
+                      <div class="container-imagenes-index">
+                        <img class="img-rectangular-bordes-redondeados imagen-hover-gris-sombra" src="./image/dance-class-in-studio.jpg" alt="mujeres haciendo ejercicio"> 
+                      </div>     
+                    </div>
+                  </div>   
+                  
+                  
+
+                
+              </section>
+
+              <section id="cuerpoAcercaNosotros">
+                <div class="container">
+                      <div class="ancla" id="acercaDeNosotros-ancla"></div>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <div class="container-imagenes-index ">
+                              <img class="img-rectangular-bordes-redondeados imagen-hover-gris-sombra" src="./image/acercaNosotros.jpg" alt="mujeres haciendo ejercicio"> 
+                            </div>     
+                          </div>
+                          <div class="col">
+                            <div class="titulo">
+                            
+                              <h2><strong>Acerca de nosotros</strong> </h2>
+                            </div> 
+                            <br>  
+                            <p class="texto p-333"><span>
+                              Inauguramos nuestro primer gimnasio en el año 2003, con el propósito de que todos puedan acceder a la práctica de actividad física, ampliando nuestro concepto a una experiencia de calidad de nuestros socios.
+                              Actualmente contamos con sedes en distintos puntos del país, con instalaciones y equipos de última tecnología y calificados instructores y profesores de educación física.
+                              Continuamos en constante innovación, al servicio de nuestros socios. </span></p>
+                          </div>
+                        
+                        </div>   
+                        
+                      
+                      </div>  
+                </div>
+              </section>      
+
+
+         
+              <section id="asociarse">
+                  <div class="container">
+                        <div class="ancla" id="asociarse-ancla"></div>
+
+                          <div class="row">
+
+                            <div class="col">
+
+                              <div class="titulo">
+          
+                                  <h2><strong>Asociarse</strong> </h2>
+
+                              </div>
+
+                            </div>
+
+                          </div>
+                          <div>
+
+                              <P class="p-333"> Elija uno de nuestros planes y obtenga numerosas ventajas para su salud.</P>
+
+                          </div>
+                          
+                          <div class="row">
+
+                            
+                            <div class="col-3 sombra-planes" id="plan-1">
+                              <form id="form-plan-1"> 
+                                    <div id="Plan1Descripcion">
+                                          <div><P id ="p-plan-1-titulo">Plan Black Individual</P></div>
+                                          <div> Rutinas personalizadas</div>
+                                          <div> Pase libre pileta de natación</div>
+                                    </div>
+                                    <div>
+                                      <button class="btn btn-hover btn-active btn-danger" type="button" id="btnPlan-1" name="btnPlan-1">Asociarse</button>
+                                    </div>
+                                    <BR>
+                              </form>
+                              
+
+                            
+                            </div>
+
+
+                            <div class="col-1"></div>
+                            <div class="col-3 sombra-planes " id="plan-2">
+                              <form id="form-plan-2">
+                                    <div id="Plan2Descripcion"> 
+                                          <div id="p-plan-2-titulo">Plan Grupal</div>
+                                          <div id="p-plan-2-linea1">Membresia anual para grupos</div>
+                                    </div>      
+                                    <div>
+                                      <button class="btn btn-hover btn-active btn-danger" type="button" id="btnPlan-2" name="btnPlan-2">Asociarse</button>
+                                    </div>
+                                    <BR>
+                              </form>          
+                            </div>
+                            <div class="col-1"></div>
+                            <div class="col-3 sombra-planes" id="plan-3">
+                              <form id="form-plan-3">
+                                  <div id="Plan3Descripcion">  
+                                      <div id="p-plan-3-titulo">Plan Corporativo</div>
+                                      <div id="p-plan-3-linea1">Planes a partir de 30 cápitas</div>
+                                  </div>   
+
+                                  <div>
+                                    <button class="btn btn-hover btn-active btn-danger" type="button" id="btnPlan-3" name="btnPlan-3">Asociarse</button>
+                                  </div>
+                                  <BR>
+                              </form>        
+                            </div>
+                          
+                          </div>
+                          <!-- Formulario dos pasos-->
+                          <br> 
+                          <div class="row">
+
+                              <form  id="step-1">
+                                <div class="col-12 sombra-planes">
+                                    <br>
+                                    
+                                    <div id="plan-3-titulo">Plan seleccionado <label id="lbl-plan-coti" ></label> para cotizar el plan, por favor complete los siguientes datos</div>
+                                    <label id="lbl-nombre" >Nombre:</label>
+                                    <input class="input-cotizacion" type="text" id="name-coti" name="name-coti" placeholder="Ingresa tu nombre">*
+
+                                      
+                                    <label id="lbl-email" >Email:</label>
+                                    <input  class="input-cotizacion" type="email" id="email-coti" name="email-coti" placeholder="Ingresa tu email">*
+                                    <button class="btn btn-hover btn-active btn-danger" type="button" id="next-btn-coti" >Cotizar</button>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>  
+                              </form>                            
+                          
+                          </div>  
+
+                          <div class="row">
+      
+                            <div class="col">
+       
+                                 
+                                   <form class="step-2"  id="step-2">
+                                       <div class="sombra-planes summary">
+                                            <p class="p-333"> <b> Cotización del plan: </b> </p>
+                                            <div id="summary">  </div>
+                                            
+                                             
+                                               <button class="btn btn-hover btn-active envio-cotizacion-pdf-margin-left btn-danger" type="button" id="next-btn-coti" >Exportar a PDF</button>
+                                           
+                                           
+                                       </div>
+                                    
+                                   </form>  
+                                     
+       
+       
+                            </div>
+       
+       
+       
+                          </div> 
+                          <!-- Fin fomrulario dos pasos-->
+       
+                  </div>        
+
+                  
+                 
+
+
+
+
+                </div>
+
+
+
+                  
+            
+              </section>
+
+              
+              <section id="contacto">
+                <div class="container">
+                    <div class="ancla" id="contacto-ancla"></div>
+                    <form action ="" id="frmContacto" name="formularioContacto" method="get">
+                      <div class = "formulario-contacto">
+                              <div class="conta">
+                                
+                                <h1>Contacto</h1>
+                              </div> 
+                              <br>
+                              <br>
+                              <div class="refe">
+                               
+                                    <input class="ingresos" type="name" id="nombre" name="nombre" placeholder="Ingresa tu nombre"> *
+                               
+                                    <input class="ingresos" type="name" id="apellido" name="apellido" placeholder="Ingresa tu apellido"> *
+                               
+                                    <input class="ingresos" type="number" id="edad" name="edad" placeholder="Ingresa tu edad"> *
+                                                                    
+                                    <input class="ingresos" type="email" id="email" name="email" placeholder="Ingresa tu email"> *
+                                    
+                                    <input class="ingresos" type="tel" id="telefono" name="telefono" placeholder="Ingresa tu teléfono"> *
+                              
+
+
+                               
+                                    <br>
+                                    <br>
+                                    
+                                    <p class="texto-contacto">Contanos que clases o ejercicios te interesa:</p>
+                               
+                                    <textarea class="ingresos1" id ="comentario" name="comentario" cols="67" rows="4" placeholder="Comentario"></textarea> *
+                              
+                               
+                                    <!--<input class="envio" type="submit" value="ENVIAR">-->
+                                    <button class="btn btn-hover btn-active btn-danger envio-margin-left " type="submit" id="btnEnviar" name="btnEnviar">Enviar</button>
+
+                                    <p class="texto-1">* campos obligatorios</p>
+                               
+                              </div>
+                        </div>       
+                    </form>    
+                </div>
+                <br>
+                <br>
+              </section>
+            </main>
+          
+     </div>   
+     <!-- Footer-->
+     <footer class="footer">
+            <div class="container-redesSociales-footer">
+              <a href="https://instagram.com/grupoiii789/" target="_blank"> <img class="img-1" src="./image/bxl-instagram-alt.svg" alt="instagram"></a>
+              <a href="https://facebook.com" target="_blank"> <img class="img-1" src="./image/bxl-facebook-circle.svg" alt="facebook"></a>
+              <a href="https://twitter.com" target="_blank"> <img class="img-1" src="./image/bxl-twitter.svg" alt="twitter"></a>
+              <a href="https://api.whatsapp.com/send/?phone=541126062439&text&type=phone_number&app_absent=0" target="_blank"> <img class="img-1" src="./image/icons8-whatsapp.svg" alt="whastsapp"> </a>
             </div>
-          </li>
-          <li> 
-            <div class="imagen-2">
-              <img class="imagen" src="./image/Gym2.jpg" alt="Gym 2" > 
-              <div class="p-sedes">
-                <p>Sede Rosario</p>
-              </div>
+
+            
+            <div class="container  ">
+              <p><a class="a-footer" href="staff.html" target="_blank">(c) 2023 by Grupo III</a></p>
             </div>
-          </li>
-          <li>
-            <div class="imagen-3">
-              <img class="imagen" src="./image/Gym3.jpg" alt="Gym 3" > 
-              <div class="p-sedes">
-                <p>Sede Mendoza</p>
-              </div>
-            </div>    
-          </li>
-          <li>
-            <div class="imagen-3">
-              <img class="imagen" src="./image/Gym4.jpg" alt="Gym 4" > 
-              <div class="p-sedes">
-                <p>Sede Córdoba</p>
-              </div>
-            </div>     
-          </li>
-        </ul>
-      </div>     
-    </section>
 
-    <section id="cueroPrincipal">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="titulo">
-              <br>
-              <br>
-              <br>
-              <h2><strong>Trabajo personalizado para mujeres.</h2></strong> 
-            </div> 
-            <br>  
-            <p class="texto">Lográ tu mejor figura con entrenamientos personalizados y exclusivos, adaptados a tus condiciones 
-              personales, podras ver resultados asegurados en sólo 90 días.</p>
-          </div>
-          <div class="col">
-            <div class="container-imagenes-index tamanio1">
-              <img class="img-borde-izquierdo-curvo-index" src="./image/strong-women-planking.jpg" alt="mujeres haciendo ejercicio"> 
-            </div>     
-          </div>
-        </div>   
-        <br>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col">
-            <div class="container-imagenes-index tamanio1">
-              <img class="img-borde-derecho-curvo-index" src="./image/arm-back-muscles.jpg" alt="hombre realizando ejercicio"> 
-            </div>     
-          </div>
-          <div class="col">
-            <div class="titulo1">
-              <br>
-              <br>
-              <h2><strong>Sobrecarga y Musculación.</h2></strong> 
-              <br>   
-              <p class="texto">Planes especiales diagramados para quemar calorías y también para aumentar masa musucular, podrás ver los
-                resultados en un corto plazo, no más de 90 días de ejercitación.</p>
-            </div> 
-          </div>  
-          <br>
-          <br>
-        </div>   
-        <br>
-        <br>
-        <br>
-        <div class="row">
-          <div class="col">
-            <div class="titulo">
-              <br>
-              <br>
-              <br>
-              <h2><strong>Clases de tango, danzas clásicas y bailes modernos de todo tipo.</h2></strong> 
-            </div>
-            <br>   
-            <p class="texto">Asociate a nuestras clases de bailes y obtené la figura que deseas con un método divertido y con mínimo
-              esfuerzo, te sorprenderas de ver resultados en forma casi inmediata, en al menos 45 días.</p>
-          </div>
-          <div class="col">
-            <div class="container-imagenes-index tamanio1">
-              <img class="img-borde-izquierdo-curvo-index" src="./image/dance-class-in-studio.jpg" alt="mujeres bailando"> 
-            </div>     
-          </div>
-        </div> 
-        <br>
-        <br>
-        <br>
-      </div>  
-    </section>
+            
+            <div class="logo-footer">
+              <img class="img-circle-logo" src="./image/logo.jpg" alt="Fitness club" class="navbar-brand">
+           </div>
+       
+    </footer>
 
-    <section id="QuienesSomos">
-      <div class="ancla" id="acercaQuienesSomos-ancla"></div>
-        <div  class="aNosotros">
-          <div class="titulo">
-            <p>Quienes somos</p>
-          </div>
-          <br>
-          <p class="texto"><span>Inauguramos nuestro primer gimnasio en el año 2003, con el propósito de que todos puedan acceder
-            a la práctica de actividad física, ampliando nuestro concepto a una experiencia de calidad de nuestros socios.
-            Actualmente contamos con sedes en distintos puntos del país, con instalaciones y equipos de última tecnología y calificados
-            instructores y profesores de educación física. Continuamos en constante innovación, al servicio y bienestar de nuestros socios.</span></p>
-        </div>
-      </div>     
-    </section>
-
-    <section id="Asociarse">
-      <div class="ancla" id="asociarse-ancla">
-        <p>Asociarse</p>
-      </div>
-    </section>
-
-    <section id="Contacto">
-      <div class="ancla" id="contacto-ancla"></div>
-        <div class="conta">
-          <h1>Contactanos ...</h1>
-        </div> 
-        <br>
-        <br>
-        <form action ="" id="frmContacto" name="formularioContacto" method="get">
-          <div class="refe">
-            <input class="ingresos" type="name" name="nombre" placeholder="Ingresa tu Nombre">
-            <input class="ingresos" type="name" name="apellido" placeholder="Ingresa tu Apellido">
-            <input class="ingresos" type="number" name="edad" placeholder="Ingresa tu Edad">
-            <input class="ingresos" type="email" name="email" placeholder="Ingresa tu Email">
-            <input class="ingresos" type="text" name="telefono" placeholder="Ingresa tu Teléfono">
-            <br>
-            <br>
-            <p>Contanos que clases o ejercicios te interesa\n:</p>
-            <textarea class= "ingreso1" name="comentario" cols="67" rows="3" placeholder="Comentario"></textarea>
-            <button class="boton" type="submit" id="btnEnviar" name="btnEnviar">Enviar</button>
-          </div>
-          <br>
-          <br>
-        </form>
-      </div>  
-    </section>
-  </main> 
-
-  <!-- Footer-->
-  <footer class="footer">
-    <div class="logo-footer">
-      <img class="img-circle-logo" src="./image/logo.jpg" alt="Fitness club" class="navbar-brand">
-    </div>
-    <br>
-    <br>
-    <br>
-    <div class="containerfooter">
-      <p>Sede CABA: Av. Neuquén 545, CABA, Argentina.</p>
-      <p>Sede Rosario: Bartolome Mitre 1897, Rosario, Santa Fé, Argentina.</p>
-      <p>Sede Mendoza: Av. San Martín 2488, Ciudad, Mendoza, Argentina.</p>
-      <p>Sede Cordoba: Soler 121, Córdoba Capital, Argentina.</p>
-      <div class="container-redesSociales-footer">
-        <a href="https://instagram.com" target="_blank"> <img class="img-1" src="./image/bxl-instagram-alt.svg" alt="instagram"></a>
-        <a href="https://facebook.com" target="_blank"> <img class="img-1" src="./image/bxl-facebook-circle.svg" alt="facebook"></a>
-        <a href="https://twitter.com" target="_blank"> <img class="img-1" src="./image/bxl-twitter.svg" alt="twitter"></a>
-        <a href="https://whatsapp.com" target="_blank"> <img class="img-1" src="./image/icons8-whatsapp.svg" alt="whastsapp"> </a>
-      </div>
-    </div>
-  </footer>
+       <script src="./js/script.js"></script>
 
   </body>
-  <script src="./js/script.js"></script>
+  
 
 </html>
