@@ -456,9 +456,20 @@ body {
         font-family:Impact;
         /*font:bold;*/
         font-style: oblique;
-        color:whitesmoke;
+        color: #1d1b1b;
+        letter-spacing: 0.15em;
         /*float: left;*/
+        
+    }
+
+    .texto-impact-titulo-plan {
+
         font-size: 40px;
+    }
+
+    .texto-impact-descripcion-plan {
+
+        font-size: 20px;
     }
 
      /* Fin asociarse */
