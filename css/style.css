@@ -35,6 +35,17 @@ body {
 }
 
 
+<<<<<<< HEAD
+    /* Deja fijo el menu */
+    header {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        z-index: 3;    /* orden los elementos por acoplamiento */    
+    }
+=======
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 
     .navbar {
         padding: 1rem;
@@ -46,7 +57,6 @@ body {
         float: right;
         font-weight: bold;
     }
-   
     .navbar-collapse {
         align-items: center;
         justify-content: end;
@@ -56,7 +66,7 @@ body {
         /*font-family: 'Times New Roman', Times, serif;*/
         font-size: 55px;
         float: left;
-        margin-left: 30px;
+        margin-left: 60px;
     }
 
     .img-1 {
@@ -64,16 +74,31 @@ body {
         font-size: 30px;
     }
 
+<<<<<<< HEAD
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        color: #333;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        padding-top: 10.625rem;   /* espacio para que no quede tapado por la cabecera fija el texto inicial */
+        background: rgb(250,249,251);
+        background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(253,135,29,1) 100%);
+    }
+    
+    p {
+=======
     /*p {
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
         margin-bottom: 1.6em;
     }
     */
     .texto {
         margin-bottom: 1.6em;
         color:#333;
-
     }
 
+<<<<<<< HEAD
+=======
     .texto-1 {
         margin-bottom: 0.6em;
         font-size: 50%;
@@ -83,6 +108,7 @@ body {
 
     
 
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
     .header {
          
         color: white;
@@ -154,7 +180,6 @@ body {
         text-size-adjust: initial;
         color: rgba(253,135,29,1);
         font-size: 30px;
-        /* background-color: #4e3232; */
     }
     
     /* configuro las paradas de cada foto */ 
@@ -201,18 +226,26 @@ body {
     }
    
     .img-borde-izquierdo-curvo-index{
+        margin-right: 1rem;
+        float: right;
         object-fit: cover;
         width:80%;
         height:70%;
-        border-top-left-radius: 260px 200px;
-        filter: drop-shadow(20px  20px 20px #333 );
+        border-top-left-radius: 200px 200px;
+        filter: drop-shadow(20px  20px 20px #333);
+        margin-left: 4rem;
+    }   
+
+    .titulo1{
+        margin-left: 6rem;
     }
  
     .img-borde-derecho-curvo-index{
+        float: left;
         object-fit: cover;
         width:80%;
         height:70%;
-        border-top-right-radius: 260px 200px;
+        border-top-right-radius: 200px 200px;
         filter: drop-shadow(20px  20px 20px #333 );
     }
 
@@ -239,12 +272,21 @@ body {
    
     .row {
         justify-content: center;
-   }
+    }
 
-   /* Formulario de Contacto  */
-   #contacto{
-        background: rgb(251,248,248);
-        background: linear-gradient(0deg, rgba(251,248,248,1) 0%, rgba(245,5,5,1) 100%);
+    .img-circle-logo {
+        background: rgb(240, 161, 202);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        filter: drop-shadow(20px  20px 20px #333 );
+        z-index: 1;   /* ordena los elementos por acoplamiento */
+    }
+
+    /* Formulario de Contacto  */
+    #Contacto{
+        background: rgb(251,222,184);
+        background: linear-gradient(0deg, rgba(251,222,184,1) 0%, rgba(245,6,6,1) 100%);    
     }
 
    .conta{
@@ -252,13 +294,12 @@ body {
         font-family: Arial, Helvetica, sans-serif;
         font-size: 60px;
         color: #FFF;
-    }
+    }    
 
    .refe{
         margin-left: 8rem;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         width: auto;
-
     }
 
     /* estilo campo del formulario */
@@ -267,11 +308,23 @@ body {
         padding: 5px;
         border-radius: 10px;
         background-color: rgb(249, 212, 198);
+<<<<<<< HEAD
+        margin-bottom: 1.875em;
+        box-shadow: 8px 8px 13px #333;
+        cursor: pointer;
+=======
         margin-bottom: 30px;
         box-shadow: 4px 4px 10px #333;
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
     }
     
 
+<<<<<<< HEAD
+    .ingreso1{
+        margin-left: 12.5em;
+        padding: 0.3125em;
+        border-radius: 0.625em;
+=======
 
     /* estilo campo comentario */
     .ingresos1{
@@ -279,10 +332,68 @@ body {
         margin-left: 200px;
         padding: 5px;
         border-radius: 10px;
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
         background-color: rgb(249, 212, 198);
-        box-shadow: 4px 4px 10px #333;
+        box-shadow: 8px 8px 13px #333;
+        cursor: pointer;
     }
 
+<<<<<<< HEAD
+    .ingresos:hover{
+        box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+        transition: box-shadow 0.3s ease;
+    }
+
+    .ingreso1:hover{
+        box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+        transition: box-shadow 0.3s ease;
+    }
+
+    .conta h1{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 50px;
+    }
+
+    .refe p{
+        margin-left: 8em;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .boton{
+        margin-left: 6em;
+        display: inline-block;
+        padding: 0.625em 1.25em;
+        font-size: 0.9375em;
+        cursor: pointer;
+        text-align: center;	
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #741818;
+        border: none;
+        border-radius: 0.9375em;
+        box-shadow: 7px 7px 12px #333;
+        transition: all 500ms ease;
+    }
+
+    .boton:hover {
+        background-color: rgba(253,135,29,1);
+        box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3); 
+        transition: box-shadow 0.3s ease;
+    }
+
+    .aNosotros{
+        margin-left: 8rem;
+        font-family: Arial, Helvetica, sans-serif;       
+        color: #333;
+    }
+
+    .ancla {
+        padding-top: 10rem; /* es el ancho de mi cabecera fija */
+    }
+=======
     .texto-contacto{
         /*font-family: 'Times New Roman', Times, serif;*/
         font-family: Arial, Helvetica, sans-serif;
@@ -405,21 +516,31 @@ body {
      
      
      
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
   
 /* FOOTER */
 
-    .footer {
+    footer {
         background-color:  #C60808;
         text-align: center;
         display: flex;
-        flex-direction: left;
+        flex-direction: column;
         justify-content: right;
         color: white;
         justify-content:space-between ;
     }
 
+    .logo-footer{
+        height: 50px;
+        padding-top: 20px;
+    }
+
     .container-redesSociales-footer {
         background-color: #C60808;
+<<<<<<< HEAD
+        float: right;
+    }
+=======
     }
 
     .a-footer {
@@ -432,3 +553,4 @@ body {
 
     padding-top: 60px;
 }
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716

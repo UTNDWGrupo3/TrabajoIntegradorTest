@@ -1,5 +1,3 @@
-// declaro variables 
-
 
 // manejo datos de formulario de contacto 
 const frmContacto = document.getElementById("frmContacto");
@@ -162,20 +160,26 @@ frmContacto.addEventListener("submit", function(event)  {
 
     if (validoFrmContacto() === "OK")
     {
-        //
-
         // envio datos al pdf 
         crearPDF();
+<<<<<<< HEAD
+    
+        frmContato.reset();
+    }
+=======
 
         // fuerzo limpieza de los campos del formulario
 
         frmContacto.reset();
     };
 
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 } 
 );
 
 
+<<<<<<< HEAD
+=======
 // valido datos ingresados del formulario cotizacion de producto
 
 function validoDatosFrmCotizacionPaso1(nombre, email)
@@ -201,11 +205,25 @@ function validoDatosFrmCotizacionPaso1(nombre, email)
 };
 
 
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 // valido que los campos obligatorios se encuentre cargados
 function validoFrmContacto() {
 
     let resultado="OK";
 
+<<<<<<< HEAD
+    if (frmContato.nombre.value == "") {
+        alert("Complete el campo nombre");
+        resultado = "ERR";
+        
+    } else if (frmContato.apellido.value == "") {
+        alert("Complete el campo apellido");
+        resultado = "ERR";
+
+    } else if (frmContato.edad.value == "") {
+        alert("Complete el campo edad");
+        resultado = "ERR";
+=======
     if (frmContacto.nombre.value == "") {
 
         alert("Complete el campo nombre");
@@ -221,11 +239,21 @@ function validoFrmContacto() {
         alert("Complete el campo edad");
         resultado = "ERR";
     } else  if (frmContacto.email.value == "") {
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 
+    } else  if (frmContato.email.value == "") {
         alert("Complete el campo email");
         resultado = "ERR";
+<<<<<<< HEAD
+=======
     } else if (frmContacto.comentario.value == "") {
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 
+    } else if(frmContato.telefono.value == ""){
+        alert("Complete su número de teléfono");
+        resultado = "ERR";
+
+    } else if (frmContato.comentario.value == "") {
         alert("Complete el campo comentario");
         resultado = "ERR";
     };
@@ -233,18 +261,34 @@ function validoFrmContacto() {
     // controlo rango de edad
     if (frmContacto.edad.value != "")
     {
+<<<<<<< HEAD
+        if (parseInt(frmContato.edad.value) < 5 || parseInt(frmContato.edad.value) > 90)
+=======
         if (parseInt(frmContacto.edad.value) < 1 || parseInt(frmContacto.edad.value) > 110)
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
         {
-            alert("Debe ingresar una edad  valida. (rango 1 a 110). Gracias")
+            alert("Debe ingresar una edad  valida. (rango 5 a 90). Gracias")
             resultado = "ERR";
         }
+<<<<<<< HEAD
+    }
+=======
         
     };
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 
     return resultado;
+    
 
+<<<<<<< HEAD
+     
+    
+}
+=======
 
 };
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
+
 
 // funcion para generar PDF
 function crearPDF()
@@ -256,6 +300,8 @@ function crearPDF()
         email = document.querySelector("#email").value,
         telefono = document.querySelector("#telefono").value,
         comentario = document.querySelector("#comentario").value;
+<<<<<<< HEAD
+=======
     
     let imgLogo = new Image();
     imgLogo.src = "./image/logo.jpg";
@@ -273,9 +319,21 @@ function crearPDF()
     segundos = date.getSeconds();
     milisegundos = date.getMilliseconds();
 
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
 
+     // obtengo la fecha y hora actual
     
-    
+     // creo un objeto nuevo date 
+     let today = new Date();
+
+     // Obtengo la fecha y hora 
+     let fecha = today.toLocaleDateString("en-GB");
+     let date = new Date();
+     let horas , minutos, segundos, milisegundos;
+     horas = date.getHours();
+     minutos = date.getMinutes();
+     segundos = date.getSeconds();
+      
     var doc = new jsPDF();
     
     let y = 10;
@@ -293,8 +351,13 @@ function crearPDF()
     doc.text(20,y = y + 10,"Telefono        : " + telefono);
     doc.text(20,y = y + 10,"Comentario   : " + comentario);
     doc.text(0,y = y + 10,"_________________________________________________________________________________");
-    doc.text(20,y = y + 10, "Mensaje generado el: " + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos );
+    doc.text(20,y = y + 10, "Mensaje generado el: " + fecha + ' a las ' + horas + ":" + minutos + ":" + segundos);
 
+<<<<<<< HEAD
+    doc.save('DatosContacto'+'_'+apellido+nombre+'_'+fecha+'_'+horas+minutos+segundos+'.pdf');
+
+}
+=======
     doc.save('DatosContacto'+'_'+apellido+nombre+'_'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
  
 };
@@ -348,3 +411,4 @@ function crearPDFCotizacion()
     doc.save('Cotizacion'+fecha+'_'+horas+minutos+segundos+milisegundos+'.pdf');
  
 };
+>>>>>>> 1a9a7ad9ae70c58dda72a973d161a292d7166716
