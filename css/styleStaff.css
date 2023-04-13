@@ -26,7 +26,7 @@ body {
     color: #333;
     font-size: 1.2rem;
     line-height: 1.6em;
-    /*padding-top: 170px;*/ /* este espacio lo genera la clase ancla */  /* espacio para que no quede tapado por la cabecera fija el texto inicial */
+   
     background: rgb(250,249,251);
     background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(253,135,29,1) 100%);
 }
@@ -88,3 +88,38 @@ body {
 .espacio {
     padding-left: 15px;
 }
+
+
+.titulo-fondo {
+    
+  background-color:  #C60808;
+  color: #fff;
+  
+}
+
+hr {
+
+    border-top: 15px linear-gradient(360deg, rgba(253,135,29,1) 0%, rgba(92, 2, 2)100%);
+
+}
+
+.titulo-centrado-vertical {
+
+    display: flex;
+    align-items: center;
+    min-height: 10vh;
+
+
+}
+
+
+.imagen-hover-gris-espejo:hover{
+    filter: grayscale(80%);
+    -webkit-transform: rotateY(180deg);
+        -webkit-transform-style: preserve-3d;
+        transform: rotateY(180deg);
+        transform-style: preserve-3d;
+
+}
+
+ 
