@@ -1,6 +1,6 @@
 # TrabajoIntegradorTest
 Para pruebas
-Trabajo Integrador Grupo 3 
+Trabajo Integrador diseño web Comisión 184 - Grupo 3.
 Integrantes: Marini Mariela,
              Marquez Ana,
                      Viviana, 
