@@ -180,6 +180,7 @@ body {
         display: inline-block;
         padding: 5px;
         box-sizing: border-box;
+        object-fit: cover;
        
     }
 
@@ -332,7 +333,7 @@ body {
     #plan-1 {
         border:3px solid orange;
         border-radius: 22px;
-        background-color: black;
+        background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
         text-align: center;
         color:antiquewhite;
     }
@@ -340,7 +341,7 @@ body {
     #plan-2 {
         border:3px solid orange;
         border-radius: 22px;
-        background-color: rgb(92, 2, 2);
+        background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
         text-align: center;
         color:antiquewhite;
     }
@@ -348,7 +349,7 @@ body {
     #plan-3 {
         border:3px solid orange;
         border-radius: 22px;
-        background-color: rgb(227, 19, 130);
+        background:linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
         text-align: center;
         color:antiquewhite;
     }
@@ -423,7 +424,23 @@ body {
      /* fin control formulario de dos pasos */
      
      
-     
+    /*Asociarse*/
+    #asociarse{
+        padding-bottom: 7px;
+    }
+
+
+    
+    .gymasociarse{
+        padding: 10px;
+        object-fit: cover;
+        width: 210px;
+        height:265px;
+        border-radius: 20px;
+        filter: drop-shadow(10px  10px 10px #333 );
+    }
+    
+     /* Fin asociarse
   
 /* FOOTER */
 
