@@ -75,11 +75,32 @@ body {
     }
 
     .texto-1 {
-        margin-bottom: 0.6em;
-        font-size: 50%;
+        margin-left: 8.7rem;
+        font-size: 80%;
         color:#333;
 
     }
+
+    .texto-copywrite {
+        
+        font-size: 75%;
+        color : #fefefe;
+
+    }
+
+    
+    .texto-boton-massn {
+        padding: auto;
+        font-size: 80px;
+        color : #fefefe;
+        font-weight: 2500;
+    }
+
+
+    .texto-333{
+        font-size: 25px;
+    }
+    
 
     
 
@@ -110,7 +131,7 @@ body {
         
     .btn-active:active {
         background-color: #cc0404;
-        box-shadow: 0 5px #666;
+        box-shadow: 0 5em #666;
         transform: translateY(4px);
         color: #FFF;
     }
@@ -174,25 +195,31 @@ body {
 
     .titulo {
         color: #5d0404;
+        font-size: 60px;
     }
     
     .container-imagenes-index {
         display: inline-block;
-        padding: 5px;
+        /*padding: 5px;*/
         box-sizing: border-box;
         object-fit: cover;
+        filter: grayscale(100%);
        
     }
 
 
+    .container-imagenes-index:hover{
+        filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
+        transition: 3s;
+    }
      
 
   
        
     .imagen-hover-gris:hover{
          
-        filter: grayscale(80%);
-
+        filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
+        transition: 3s;
         
     }
 
@@ -228,14 +255,15 @@ body {
 
     .img-rectangular-bordes-redondeados {
         
+       
         width:80%;
         height:70%;
         border-radius: 35px;
         filter: drop-shadow(20px  20px 20px #333 );
-        margin-right: 1rem;
-        float: right;
+        /*margin-right: 1rem;*/
+        /*float: right;*/
         object-fit: cover;
-        margin-left: 4rem;
+        /*margin-left: 2rem;*/
 
     }
 
@@ -256,15 +284,15 @@ body {
 
    /* Formulario de Contacto  */
    #contacto{
-        background: rgb(251,248,248);
-        background: linear-gradient(0deg, rgba(251,248,248,1) 0%, rgba(245,5,5,1) 100%);
+        background: linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
     }
 
    .conta{
-        margin-left: 8rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 60px;
-        color: #fff;
+    margin-left: 16.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
     }
 
    .refe{
@@ -279,7 +307,7 @@ body {
     
 
     .ingresos{
-        margin-left: 12.5em;
+        margin-left: 7em;
         padding: 0.3125em;
         border-radius: 0.625em;
         background-color: #f9d4c6;
@@ -292,7 +320,7 @@ body {
     /* estilo campo comentario */
   
     .ingreso1{
-        margin-left: 12.5em;
+        margin-left: 7em;
         padding: 0.3125em;
         border-radius: 0.625em;
         background-color: rgb(249, 212, 198);
@@ -300,6 +328,14 @@ body {
         cursor: pointer;
     }
 
+
+    .conta{
+        margin-left: 16.6rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 60px;
+        font-weight: bold;
+        color: #fff;
+    }
 
     .ingresos:hover{
         box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
@@ -321,10 +357,11 @@ body {
         font-size: 30px;
         font-weight: bold;
         color: #fff;
+        margin-left: 8.5rem;
     }
 
     .envio-margin-left{
-        margin-left: 1100px;
+        margin-left: 840px;
        
     }
     
