@@ -37,7 +37,7 @@ body {
 
 
     .navbar {
-        padding: 1rem;
+        padding: 2rem;
         background-color: #C60808;
     }
 
@@ -97,11 +97,13 @@ body {
     }
 
 
-    .texto-333{
+    .texto-p-333{
         font-size: 25px;
     }
     
-
+    .texto-333{
+        font-size: 25px;
+    }
     
 
     .header {
@@ -201,7 +203,7 @@ body {
     
     .container-imagenes-index {
         display: inline-block;
-        /*padding: 5px;*/
+        padding: 5px;
         box-sizing: border-box;
         object-fit: cover;
         filter: grayscale(100%);
@@ -261,10 +263,10 @@ body {
         height:70%;
         border-radius: 35px;
         filter: drop-shadow(20px  20px 20px #333 );
-        /*margin-right: 1rem;*/
-        /*float: right;*/
+        margin-right: 1rem;
+        float: center;
         object-fit: cover;
-        /*margin-left: 2rem;*/
+        margin-left: 2rem;
 
     }
 
