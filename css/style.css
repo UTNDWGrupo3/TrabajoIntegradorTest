@@ -131,12 +131,13 @@ body {
         
     .btn-active:active {
         background-color: #cc0404;
-        box-shadow: 0 5em #666;
+        box-shadow: 0 0.5em #666;
         transform: translateY(4px);
         color: #FFF;
     }
 
-
+     
+   
 /* Main  */
    
     .slider {
