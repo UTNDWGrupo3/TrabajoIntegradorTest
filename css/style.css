@@ -70,14 +70,14 @@ body {
     */
     .texto {
         margin-bottom: 1.6em;
-        color:#333;
+        color:#fefefe;
 
     }
 
     .texto-1 {
         margin-left: 8.7rem;
         font-size: 80%;
-        color:#333;
+        color: #fefefe;
 
     }
 
@@ -362,7 +362,7 @@ body {
     }
 
     .envio-margin-left{
-        margin-left: 840px;
+        margin-left: 479px;
        
     }
     
@@ -494,7 +494,7 @@ body {
         font-family:Impact;
         /*font:bold;*/
         font-style: oblique;
-        color: #1d1b1b;
+        color: #333/*#1d1b1b*/;
         letter-spacing: 0.15em;
         /*float: left;*/
         
