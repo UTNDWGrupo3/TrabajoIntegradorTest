@@ -5,20 +5,57 @@
     box-sizing: border-box;
 }
 
+
 /* Manejo de fuentes instalada localmente */
 /*@import url('./fonts/FasterOne-Regular.ttf');*/
 @font-face {
     font-family: 'Faster One';
     src: url('./fonts/FasterOne-Regular.ttf');
 }
-
-.nombrefasterOne{
+.nombrefasterOne-70{
     font-family: 'Faster One', cursive;
     font-size: 70px;
     margin-left: 40px;
 }
 
+
+.nombrefasterOne-40{
+    font-family: 'Faster One', cursive;
+    font-size: 40px;
+    margin-left: 40px;
+}
+
+
+
+
+
 /* Header */
+
+
+.img-circle-logo {
+    background: rgb(240, 163, 56, 0.7);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(20px  20px 20px #333 );
+    z-index: 1;   /* ordena los elementos por acoplamiento */
+}
+
+ 
+.header {
+    color: white;
+}
+
+.navbar {
+    
+    background-color: #C60808;
+}
+
+.navbar-collapse {
+    align-items: left;
+    justify-content: end;
+}
+
 
 body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -29,79 +66,12 @@ body {
     background: linear-gradient(90deg, rgba(250,249,251,1) 0%, rgba(253,135,29,1) 100%);
 }
 
-.navbar {
-    padding: 2rem;
-    background-color: #C60808;
-}
-
-.nav-link {
-    color :#FFF;
-    float: right;
-    font-weight: bold;
-}
-
-.navbar-collapse {
-    align-items: center;
-    justify-content: end;
-}
-
 .nombre {
     font-size: 55px;
     float: left;
     margin-left: 30px;
 }
 
-.img-1 {
-    fill:#fefefe !important;
-    font-size: 30px;
-}
-
-.texto {
-    margin-bottom: 1.6em;
-    color:#fefefe;
-}
-
-.texto-contacto-1 {
-    margin-left: 8.5rem;
-    font-size: 80%;
-    color: #fefefe;
-    text-align: left;
-}
-
-.texto-step1-1 {
-    
-    font-size: 80%;
-    color: #333;
-    text-align: left;
-}
-
-.texto-margin-step1-1 {
-    margin-left: 17rem;
-}
-
-.texto-copywrite {
-    font-size: 75%;
-    color : #fefefe;
-}
-
-.texto-boton-massn {
-    padding: auto;
-    font-size: 80px;
-    color : #fefefe;
-    font-weight: 2500;
-}
-
-.texto-p-333{
-    font-size: 25px;
-}
-
-.texto-333{
-    font-size: 25px;
-}
-
-.header {
-    color: white;
-}
 
 /* estilo de los botones */
 .btn {
@@ -129,8 +99,11 @@ body {
     color: #FFF;
 }
 
-/* Main  */
 
+
+/* Main */
+
+/* slider */
 .slider {
     width: 95%;
     margin: auto;
@@ -184,11 +157,15 @@ body {
     100% {margin-left: -300%; }
 }
 
+/* fin slider */
+
+/* titulo de cada foto */
 .titulo {
     color: #5d0404;
     font-size: 60px;
 }
 
+/* Configuro cada foto al lado de los titulos */
 .container-imagenes-index {
     display: inline-block;
     padding: 5px;
@@ -202,6 +179,7 @@ body {
     transition: 3s;
 }
 
+
 .imagen-hover-gris:hover{
     filter: drop-shadow(20px  20px 20px #333 )  grayscale(0%) ;
     transition: 3s;
@@ -211,27 +189,6 @@ body {
     filter: drop-shadow(20px  20px 20px #333 )  grayscale(80%) ;
 }
 
-.img-borde-izquierdo-curvo-index{
-    width:80%;
-    height:70%;
-    border-top-left-radius: 260px 200px;
-    filter: drop-shadow(20px  20px 20px #333 );
-    margin-right: 1rem;
-    float: right;
-    object-fit: cover;
-    margin-left: 4rem;
-}
- 
-.img-borde-derecho-curvo-index{
-    width:80%;
-    height:70%;
-    border-top-right-radius: 260px 200px;
-    filter: drop-shadow(20px  20px 20px #333 );
-    margin-right: 1rem;
-    float: right;
-    object-fit: cover;
-    margin-left: 4rem;
-}
 
 .img-rectangular-bordes-redondeados {
     width:80%;
@@ -244,93 +201,139 @@ body {
     margin-left: 2rem;
 }
 
-.img-circle-logo {
-    background: rgb(240, 163, 56, 0.7);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    filter: drop-shadow(20px  20px 20px #333 );
-    z-index: 1;   /* ordena los elementos por acoplamiento */
-}
-
 .row {
     justify-content: center;
 }
 
-/* Formulario de Contacto  */
-#contacto{
-    background: linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
+/* Para controlar formulario de dos pasos */
+form {
+    margin-bottom: 20px;
 }
 
-.conta{
-    margin-left: 16.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+#step-1 {
+    display: none;
+}
+
+#step-2 {
+    display: none;
+}
+
+.step-2 {
+    border:3px solid orange;
+    border-radius: 10px;   
+}
+
+.envio-cotizacion-pdf-margin-left1 {
+    margin-left: 12em;
+}
+
+.p-333 {
+    color: #333;
+}
+
+
+.sombra-planes {
+    box-shadow: 5px 5px 15px gray;
+}
+
+
+#step-1 {
+
+
+
+    border:3px solid orange;
+    border-radius: 22px;
+    background-color:  rgba(63, 61, 61, 0.15);
+    text-align: center; 
+    color:antiquewhite;
+
+}
+
+.texto-margin-step1-1 {
+    text-align: left;
+}
+
+
+#summary {
+    border-radius: 22px;
+    background-color:  rgba(63, 61, 61, 0.15); 
+    text-align: left;
+    color: #333;
+    padding: 10px;
+}
+
+
+#plan-seleccionado-step1{
+    color:  #333;
+    font-size: 15px;
     font-weight: bold;
-    color: #fff;
 }
 
-.refe{
-    margin-left: 8rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: auto;
-}
-
-/* estilo campo del formulario */
-.ingresos{
-    margin-left: 7em;
-    padding: 0.3125em;
-    border-radius: 0.625em;
-    background-color: #f9d4c6;
-    margin-bottom: 1.875em;
-    box-shadow: 8px 8px 13px #333;
-    cursor: pointer;
-}
-
-/* estilo campo comentario */
-.ingreso1{
-    margin-left: 7em;
-    padding: 0.3125em;
-    border-radius: 0.625em;
-    background-color: rgb(249, 212, 198);
-    box-shadow: 8px 8px 13px #333;
-    cursor: pointer;
-}
-
-.conta{
-    margin-left: 16.6rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+#plan-seleccionado-label{
+    color: #333;
+    font-size: 7px;
     font-weight: bold;
-    color: #fff;
+}
+.texto-impact-seleccionado-label {
+    font-size: 25px;
 }
 
-.ingresos:hover{
-    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
-    transition: box-shadow 0.3s ease;
+.texto-impact {
+    font-family:Impact;
+    font-style: oblique;
+    color: #333;
+    
+    object-fit: cover;
 }
 
-.ingreso1:hover{
-    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
-    transition: box-shadow 0.3s ease;
-}
-
-.texto-contacto{
-    font-family: Arial, Helvetica, sans-serif;
+.texto-impact-titulo-plan {
     font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    margin-left: 8.5rem;
+    /*letter-spacing: 0.15em;*/
 }
 
-.envio-margin-left{
-    margin-left: 479px;
+.texto-impact-descripcion-plan {
+    font-size: 20px;
+}
+
+ 
+
+.texto-step1-1 {
+    
+    font-size: 80%;
+    color: #333;
+    
 }
 
 
-.ancla  {
-    padding-top: 190px; /* es el ancho de mi cabecera fija, para que no se tape el contenido debajo de la cabecera */
-    }
+
+/* fin control formulario de dos pasos */
+
+
+/*Asociarse*/
+#asociarse{
+    padding-bottom: 7px;
+}
+
+
+.texto-p-333{
+    font-size: 25px;
+}
+
+
+/*Asociarse*/
+#asociarse{
+    padding-bottom: 7px;
+}
+
+.gymasociarse{
+    padding: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 265%;
+    border-radius: 20px;
+    float: center;
+    filter: drop-shadow(10px  10px 10px #333 );
+}
 
 #plan-1 {
     border:3px solid orange;
@@ -356,113 +359,185 @@ body {
     color:antiquewhite;
 }
 
-.sombra-planes {
-    box-shadow: 5px 5px 15px gray;
+
+/* Formulario de Contacto  */
+
+
+
+#contacto{
+    background: linear-gradient(360deg,rgba(253, 135, 29,1) 0%,rgba(92, 2, 2) 100%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    justify-content:flex-start; /* space-between;*/
+    padding: 1rem;
 }
 
-#step-1 {
 
-
-
-    border:3px solid orange;
-    border-radius: 22px;
-    background-color:  rgba(63, 61, 61, 0.15);
-    text-align: center; 
-    color:antiquewhite;
-
+.conta{
+   /* margin-left: 16.6rem;*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
 }
 
-#summary {
-    border-radius: 22px;
-    background-color:  rgba(63, 61, 61, 0.15); 
+
+.refe{
+    /*margin-left: 8rem;*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: auto;
     text-align: left;
-    color: #333;
-    padding: 10px;
+    
 }
 
-.input-cotizacion{
-    padding: 5px;
-    border-radius: 10px;
+/* estilo campo del formulario */
+.ingresos{
+    /*margin-left: 7em;*/
+    padding: 0.3125em;
+    border-radius: 0.625em;
+    background-color: #f9d4c6;
+    margin-bottom: 1.875em;
+    box-shadow: 8px 8px 13px #333;
+    cursor: pointer;
+}
+
+/* estilo campo comentario */
+.ingreso1{
+
+    /*margin-left: 7em;
+    padding: 0.3125em;
+    float: left;
+    
+   
+    
+    */
+    width: 95%;
+    height: auto;
+    border-radius: 0.625em;
     background-color: rgb(249, 212, 198);
-    margin-bottom: 30px;
-    box-shadow: 4px 4px 10px #333;
+    box-shadow: 8px 8px 13px #333;
+    cursor: pointer;
+
+ 
 }
 
-/* Para controlar formulario de dos pasos */
-form {
-    margin-bottom: 20px;
+/*.conta{
+    margin-left: 16.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+}
+*/
+.ingresos:hover{
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+    transition: box-shadow 0.3s ease;
 }
 
-#step-1 {
-    display: none;
+.ingreso1:hover{
+    box-shadow: 6px 6px 10px rgb(0, 0, 0, 0.3);  
+    transition: box-shadow 0.3s ease;
 }
 
-#step-2 {
-    display: none;
-}
-
-.step-2 {
-    border:3px solid orange;
-    border-radius: 10px;   
-}
-
-.envio-cotizacion-pdf-margin-left {
-    margin-left: 1100px;
-}
-
-.p-333 {
-    color: #333;
-}
-/* fin control formulario de dos pasos */
-
-/*Asociarse*/
-#asociarse{
-    padding-bottom: 7px;
-}
-
-.gymasociarse{
-    padding: 10px;
-    object-fit: cover;
-    width: 210px;
-    height:265px;
-    border-radius: 20px;
-    filter: drop-shadow(10px  10px 10px #333 );
-}
-
-.texto-impact {
-    font-family:Impact;
-    font-style: oblique;
-    color: #333/*#1d1b1b*/;
-    letter-spacing: 0.15em;
-}
-
-.texto-impact-titulo-plan {
-    font-size: 40px;
-}
-
-.texto-impact-descripcion-plan {
+.texto-contacto{
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-}
-
-#plan-seleccionado-step1{
-    color:  #333;
-    font-size: 15px;
     font-weight: bold;
+    color: #fff;
+    /*margin-left: 8.5rem;*/
+}
+
+.envio-margin-left1{
+    display: flex;
+    justify-content: center; 
+    
+    
 }
 
 
-#plan-seleccionado-label{
-    color: #333;
-    font-size: 7px;
-    font-weight: bold;
-}
-.texto-impact-seleccionado-label {
-    font-size: 25px;
+.texto-contacto-1 {
+    /*margin-left: 8.5rem;*/
+    font-size: 80%;
+    color: #fefefe;
+    text-align: left;
 }
 
-/* Fin asociarse */
+
+.ancla  {
+    padding-top: 190px; /* es el ancho de mi cabecera fija, para que no se tape el contenido debajo de la cabecera */
+}
+
+
+
 
 /* FOOTER */
+
+
+/* STAFF */
+
+
+#staff {
+
+    display: none;
+}
+
+
+.img-circle-staff {
+    background: rgb(240, 163, 56, 0.7);
+    border-radius: 50%;
+    filter: drop-shadow(20px  20px 20px #333 );
+    object-fit: cover;
+    
+    filter: grayscale(100%);
+    width:10em;
+    height:10em;
+}
+
+
+.img-circle-staff:hover{
+    filter: grayscale(0%) ;
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    transition: 3s;
+    width:10em;
+    height:10em;
+}
+
+/* para manejar la primera caja */
+.caja1 {     
+    color: darkkhaki;
+    border:3px solid brown;
+    border-radius: 22px;
+    background-color: rgb(255, 127, 210); /*no lo obedece*/
+    background: linear-gradient(360deg, rgba(253,135,29,1) 0%, rgba(92, 2, 2)100%);
+    text-align: center;
+    padding-top : 5px;
+    padding-bottom : 15px;
+}
+
+.sombra {
+    box-shadow: 10px 10px 20px #333;
+}
+
+
+.espacio {
+    padding-left: 15px;
+}
+
+
+.texto-staff-desarrollo {
+
+    font-size: 100%;
+    color : #fefefe;
+}
+
+/* FIN STAFF */
+
 .footer {
     background-color:  #C60808;
     text-align: center;
@@ -498,4 +573,9 @@ hr {
 .logo-footer{
     height: 50px;
     padding-top: 20px;
+}
+
+.texto-copywrite {
+    font-size: 75%;
+    color : #fefefe;
 }
