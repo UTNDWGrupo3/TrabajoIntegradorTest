@@ -151,7 +151,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
 
    };
 
-   cotizacionDetalle = "Plan en promoción vigente, precio anual del plan $" + valorPlan + " , descuento especial del " + descuentoPlan + "%. Precio final con descuento incluido: $" + precioFinalPlan; 
+   cotizacionDetalle = "Plan en promoción vigente, precio anual del plan $" + valorPlan + " , descuento especial del " + descuentoPlan + "%. Precio final con descuento incluido: $" + precioFinalPlan +  ". <br> Validez de la oferta 10 días a partir de la fecha."; 
 
     
     summary.innerHTML = `Nombre: ${nombre} 
