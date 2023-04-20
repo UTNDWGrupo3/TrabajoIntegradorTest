@@ -496,6 +496,15 @@ form {
     height:10em;
 }
 
+.img-sobre-correo-staff {
+    
+    
+    filter: drop-shadow(20px  20px 20px #333 );
+    object-fit: cover;
+    width:2em;
+    height:2em;
+}
+
 
 .img-circle-staff:hover{
     filter: grayscale(0%) ;
