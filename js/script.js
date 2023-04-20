@@ -120,6 +120,7 @@ function muestroCotizacion(nombre, email, planSeleccionado)
 {
     
    let cotizacionDetalle;
+   let cotizacionOfertaValida;
    let valorPlan;
    let descuentoPlan;
    let precioFinalPlan;
@@ -151,14 +152,15 @@ function muestroCotizacion(nombre, email, planSeleccionado)
 
    };
 
-   cotizacionDetalle = "Plan en promoción vigente, precio anual del plan $" + valorPlan + " , descuento especial del " + descuentoPlan + "%. Precio final con descuento incluido: $" + precioFinalPlan +  ". <br> Validez de la oferta 10 días a partir de la fecha."; 
-
-    
-    summary.innerHTML = `Nombre: ${nombre} 
+   cotizacionDetalle = "Plan en promoción vigente, precio anual del plan $" + valorPlan + " , descuento especial del " + descuentoPlan + "%. Precio final con descuento incluido: $" + precioFinalPlan +  "."; 
+   cotizacionOfertaValida = "Validez de la oferta 10 días a partir de la fecha.";
+  
+   summary.innerHTML = `<br>                     Nombre: ${nombre} 
                     <br> Email: ${email} 
                     <br> Plan seleccionado ${planSeleccionado} 
-                    <br> ${cotizacionDetalle}` ;
- 
+                    <br> ${cotizacionDetalle} 
+                    <br> ${cotizacionOfertaValida}` ;
+                    
     // ocultar el primer paso y mostrar el segundo 
     step1.style.display = "none";
     step2.style.display = "block";
